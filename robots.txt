@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stage30.com/sitemap.xml
