@@ -30,6 +30,7 @@ body {
     flex-direction: column;
 }
 
+/* Header */
 header {
     padding: 24px 60px;
     border-bottom: 1px solid var(--border-subtle);
@@ -46,23 +47,30 @@ header {
 .logo {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 900;
-    font-size: 1.15rem;
+    font-size: 1.35rem;
     letter-spacing: 0.08em;
     text-decoration: none;
 }
 
-.logo-stage { color: var(--white); }
-.logo-number { color: var(--orange); }
-
-.logo-tm {
-    font-size: 0.5em;
-    vertical-align: super;
-    font-weight: 400;
-    color: var(--text-nav);
-    letter-spacing: 0;
+.logo-stage {
+    color: var(--white);
 }
 
-nav { display: flex; gap: 32px; }
+.logo-number {
+    color: var(--orange);
+}
+
+.logo-tm {
+    font-size: 0.45em;
+    vertical-align: super;
+    color: var(--text-nav);
+    margin-left: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
 
 nav a {
     color: var(--text-nav);
@@ -73,15 +81,21 @@ nav a {
     transition: color 0.2s;
 }
 
-nav a:hover { color: var(--white); }
+nav a:hover {
+    color: var(--white);
+}
 
+/* Hero */
 .hero {
     padding: 120px 60px 100px;
     background: var(--dark-gray);
     border-bottom: 1px solid var(--border-subtle);
 }
 
-.hero-inner { max-width: 1400px; margin: 0 auto; }
+.hero-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
 .hero-label {
     font-size: 0.75rem;
@@ -99,11 +113,11 @@ nav a:hover { color: var(--white); }
     line-height: 1.08;
     letter-spacing: 0.02em;
     max-width: 900px;
-    margin-bottom: 36px;
+    margin-bottom: 32px;
 }
 
 .hero p {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     font-weight: 300;
     max-width: 600px;
     color: var(--text-secondary);
@@ -111,21 +125,27 @@ nav a:hover { color: var(--white); }
     letter-spacing: 0.01em;
 }
 
+/* Sections */
 .section {
     padding: 80px 60px;
     border-bottom: 1px solid var(--border-subtle);
 }
 
-.section-dark { background: var(--dark-gray); }
+.section-dark {
+    background: var(--dark-gray);
+}
 
-.section-inner { max-width: 1400px; margin: 0 auto; }
+.section-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
 .section h2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 900;
     font-size: 2.25rem;
     margin-bottom: 24px;
-    line-height: 1.15;
+    line-height: 1.1;
     letter-spacing: 0.025em;
 }
 
@@ -138,8 +158,11 @@ nav a:hover { color: var(--white); }
     line-height: 1.6;
 }
 
-.section p:last-child { margin-bottom: 0; }
+.section p:last-child {
+    margin-bottom: 0;
+}
 
+/* Content blocks */
 .content-block {
     background: var(--mid-gray);
     border: 1px solid var(--border-medium);
@@ -148,16 +171,44 @@ nav a:hover { color: var(--white); }
 }
 
 .content-block h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 900;
-    font-size: 1.4rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     margin-bottom: 16px;
     color: var(--white);
-    letter-spacing: 0.02em;
 }
 
-.content-block p { font-size: 1rem; color: var(--text-secondary); }
+.content-block p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
 
+/* Accent lines */
+.accent-line {
+    width: 40px;
+    height: 1px;
+    background: var(--orange);
+    margin-bottom: 24px;
+}
+
+.accent-line-wide {
+    width: 60px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    margin-bottom: 24px;
+}
+
+.section-rule {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 1px;
+    background: linear-gradient(90deg, var(--orange) 40px, var(--border-subtle) 40px);
+}
+
+/* Signup */
 .signup-section {
     padding: 80px 60px;
     background: var(--dark-gray);
@@ -184,7 +235,12 @@ nav a:hover { color: var(--white); }
     max-width: none;
 }
 
-.signup-form { display: flex; gap: 12px; max-width: 500px; margin: 0 auto; }
+.signup-form {
+    display: flex;
+    gap: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+}
 
 .signup-form input[type="email"] {
     flex: 1;
@@ -199,8 +255,14 @@ nav a:hover { color: var(--white); }
     transition: border-color 0.2s, background 0.2s;
 }
 
-.signup-form input[type="email"]::placeholder { color: var(--text-nav); }
-.signup-form input[type="email"]:focus { border-color: var(--orange); background: rgba(30, 30, 30, 0.8); }
+.signup-form input[type="email"]::placeholder {
+    color: var(--text-nav);
+}
+
+.signup-form input[type="email"]:focus {
+    border-color: var(--orange);
+    background: rgba(30, 30, 30, 0.8);
+}
 
 .signup-form button {
     padding: 14px 28px;
@@ -216,8 +278,11 @@ nav a:hover { color: var(--white); }
     transition: opacity 0.2s;
 }
 
-.signup-form button:hover { opacity: 0.85; }
+.signup-form button:hover {
+    opacity: 0.85;
+}
 
+/* Footer */
 footer {
     padding: 32px 60px;
     border-top: 1px solid var(--border-subtle);
@@ -240,8 +305,11 @@ footer {
     transition: opacity 0.2s;
 }
 
-.footer-link:hover { opacity: 0.7; }
+.footer-link:hover {
+    opacity: 0.7;
+}
 
+/* Grid layout */
 .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -249,20 +317,75 @@ footer {
     margin-top: 40px;
 }
 
-.accent { color: var(--orange); }
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-top: 40px;
+}
 
+/* Orange accent text */
+.accent {
+    color: var(--orange);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    header { padding: 20px 24px; }
-    nav { gap: 20px; }
-    nav a { font-size: 0.8125rem; }
-    .hero { padding: 80px 24px 60px; }
-    .hero h1 { font-size: 2.75rem; }
-    .hero p { font-size: 1.125rem; }
-    .section { padding: 60px 24px; }
-    .section h2 { font-size: 1.875rem; }
-    .signup-section { padding: 60px 24px; }
-    .signup-form { flex-direction: column; }
-    .grid-2 { grid-template-columns: 1fr; }
-    footer { padding: 24px; }
-    .footer-content { flex-direction: column; align-items: flex-start; gap: 16px; }
+    header {
+        padding: 20px 24px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 0.8125rem;
+    }
+
+    .hero {
+        padding: 80px 24px 60px;
+    }
+
+    .hero h1 {
+        font-size: 2.75rem;
+    }
+
+    .hero p {
+        font-size: 1.125rem;
+    }
+
+    .section {
+        padding: 60px 24px;
+    }
+
+    .section h2 {
+        font-size: 1.75rem;
+    }
+
+    .signup-section {
+        padding: 60px 24px;
+    }
+
+    .signup-form {
+        flex-direction: column;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 24px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
 }
