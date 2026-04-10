@@ -33,65 +33,73 @@
     </script>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+        <a href="index.html" class="logo" aria-label="Stage30 home">
             <span class="logo-stage">STAGE</span><span class="logo-number">30</span><span class="logo-tm">™</span>
         </a>
-        <nav>
+        <nav aria-label="Main navigation">
             <a href="methodology.html">Methodology</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-inner">
-            <h1>Get in touch.</h1>
-            <p>Stage30™ is in early testing. If you're interested in what we're building, we'd like to hear from you.</p>
-        </div>
-    </section>
+    <main id="main">
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-inner">
+                <h1 id="hero-heading">Get in touch.</h1>
+                <p>Stage30™ is in early testing. If you're interested in what we're building, we'd like to hear from you.</p>
+            </div>
+        </section>
 
-    <section class="section">
-        <div class="section-inner">
-            <div class="accent-line"></div>
-            <h2>Team</h2>
+        <section class="section" aria-labelledby="team-heading">
+            <div class="section-inner">
+                <div class="accent-line" aria-hidden="true"></div>
+                <h2 id="team-heading">Team</h2>
 
-            <div class="grid-2">
-                <div class="content-block">
-                    <h3>John Otto Barbush</h3>
-                    <p>Co-founder. Built the Stage30™ methodology from first principles, starting with the question of how AI systems actually resolve uncertainty.</p>
-                    <p style="margin-top: 12px;"><a href="https://jbarbush.com" class="footer-link">jbarbush.com</a></p>
-                </div>
+                <div class="grid-2">
+                    <div class="content-block">
+                        <h3>John Otto Barbush</h3>
+                        <p>Co-founder. Built the Stage30™ methodology from first principles, starting with the question of how AI systems actually resolve uncertainty.</p>
+                        <p style="margin-top: 12px;"><a href="https://jbarbush.com" class="footer-link">jbarbush.com</a></p>
+                    </div>
 
-                <div class="content-block">
-                    <h3>Luis Matus</h3>
-                    <p>Co-founder. Leads technical implementation and proof-of-concept development across client engagements.</p>
+                    <div class="content-block">
+                        <h3>Luis Matus</h3>
+                        <p>Co-founder. Leads technical implementation and proof-of-concept development across client engagements.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section section-dark">
-        <div class="section-inner">
-            <div class="accent-line"></div>
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:hello@stage30.com" class="footer-link">hello@stage30.com</a></p>
-            <p style="margin-top: 12px;">Stage30™ is a methodology developed by <a href="https://castiron.la" class="footer-link">Cast Iron LA</a>, a Los Angeles-based creative agency.</p>
-        </div>
-    </section>
+        <section class="section section-dark" aria-labelledby="contact-heading">
+            <div class="section-inner">
+                <div class="accent-line" aria-hidden="true"></div>
+                <h2 id="contact-heading">Contact</h2>
+                <p>Email: <a href="mailto:hello@stage30.com" class="footer-link">hello@stage30.com</a></p>
+                <p style="margin-top: 12px;">Stage30™ is a methodology developed by <a href="https://castiron.la" class="footer-link">Cast Iron LA</a>, a Los Angeles-based creative agency.</p>
+            </div>
+        </section>
 
-    <section class="section">
-        <div class="section-inner">
-            <div class="accent-line"></div>
-            <h2>Status</h2>
-            <p>Early testing phase. Limited capacity. We're working with a small group of clients to validate the methodology before opening up.</p>
-            <p>Trademark filed March 2026.</p>
-        </div>
-    </section>
+        <section class="section" aria-labelledby="status-heading">
+            <div class="section-inner">
+                <div class="accent-line" aria-hidden="true"></div>
+                <h2 id="status-heading">Status</h2>
+                <p>Early testing phase. Limited capacity. We're working with a small group of clients to validate the methodology before opening up.</p>
+                <p>Trademark filed March 2026.</p>
+            </div>
+        </section>
+    </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <div>&copy; 2026 Stage30™. A <a href="https://castiron.la" class="footer-link">Cast Iron LA</a> methodology.</div>
-            <div><a href="mailto:hello@stage30.com" class="footer-link">hello@stage30.com</a></div>
+            <div>
+                <a href="privacy.html" class="footer-link">Privacy</a> &middot;
+                <a href="terms.html" class="footer-link">Terms</a> &middot;
+                <a href="mailto:hello@stage30.com" class="footer-link">hello@stage30.com</a>
+            </div>
         </div>
     </footer>
 </body>
