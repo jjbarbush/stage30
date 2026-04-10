@@ -12,7 +12,7 @@
     <meta property="og:url" content="https://stage30.com">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Stage30™ – Resolution Architecture for AI Synthesis">
-    <meta name="twitter:description" content"We build the structural layer that influences how AI systems resolve uncertainty toward your brand.">
+    <meta name="twitter:description" content="We build the structural layer that influences how AI systems resolve uncertainty toward your brand.">
     <link rel="canonical" href="https://stage30.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,71 +34,80 @@
     </script>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+        <a href="index.html" class="logo" aria-label="Stage30 home">
             <span class="logo-stage">STAGE</span><span class="logo-number">30</span><span class="logo-tm">™</span>
         </a>
-        <nav>
+        <nav aria-label="Main navigation">
             <a href="methodology.html">Methodology</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- SCENE: Set the world -->
-    <section class="hero">
-        <div class="hero-inner">
-            <div class="hero-label">Currently Testing</div>
-            <h1>AI doesn't rank.<br>It resolves.</h1>
-            <p>Every framework for AI visibility starts with search optimization. We started with a different question: what if ranking isn't what's happening at all?</p>
-        </div>
-    </section>
+    <main id="main">
+        <!-- SCENE: Set the world -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-inner">
+                <div class="hero-label" aria-hidden="true">Currently Testing</div>
+                <h1 id="hero-heading">AI doesn't rank.<br>It resolves.</h1>
+                <p>Every framework for AI visibility starts with search optimization. We started with a different question: what if ranking isn't what's happening at all?</p>
+            </div>
+        </section>
 
-    <!-- TENSION: The gap -->
-    <section class="section">
-        <div class="section-inner">
-            <div class="accent-line"></div>
-            <h2>The problem with optimization</h2>
-            <p>Search engines rank pages. AI systems collapse probability. Those are fundamentally different operations. The tools built for one don't transfer to the other.</p>
-            <p>Most approaches to AI visibility are search optimization with a new name. They optimize content for mention. That's not how selection works.</p>
-        </div>
-    </section>
+        <!-- TENSION: The gap -->
+        <section class="section" aria-labelledby="tension-heading">
+            <div class="section-inner">
+                <div class="accent-line" aria-hidden="true"></div>
+                <h2 id="tension-heading">The problem with optimization</h2>
+                <p>Search engines rank pages. AI systems collapse probability. Those are fundamentally different operations. The tools built for one don't transfer to the other.</p>
+                <p>Most approaches to AI visibility are search optimization with a new name. They optimize content for mention. That's not how selection works.</p>
+            </div>
+        </section>
 
-    <!-- ALLEVIATE: The resolution -->
-    <section class="section section-dark">
-        <div class="section-inner">
-            <div class="accent-line"></div>
-            <h2>Structure, not content</h2>
-            <p>We're building the structural layer that influences how AI systems resolve uncertainty. Not through more content or better keywords. Through architecture.</p>
-            <p>How information relates to other information matters as much as the information itself. We build those relationships so probability collapses in your direction.</p>
-        </div>
-    </section>
+        <!-- ALLEVIATE: The resolution -->
+        <section class="section section-dark" aria-labelledby="alleviate-heading">
+            <div class="section-inner">
+                <div class="accent-line" aria-hidden="true"></div>
+                <h2 id="alleviate-heading">Structure, not content</h2>
+                <p>We're building the structural layer that influences how AI systems resolve uncertainty. Not through more content or better keywords. Through architecture.</p>
+                <p>How information relates to other information matters as much as the information itself. We build those relationships so probability collapses in your direction.</p>
+            </div>
+        </section>
 
-    <!-- GROUND: Proof -->
-    <section class="section">
-        <div class="section-inner">
-            <div class="accent-line"></div>
-            <h2>Where we are</h2>
-            <p>Early testing with select clients. Measuring what works, what doesn't, and why. We're not launching a product. We're proving a methodology.</p>
-            <p>We're proving it before we explain it.</p>
-        </div>
-    </section>
+        <!-- GROUND: Proof -->
+        <section class="section" aria-labelledby="ground-heading">
+            <div class="section-inner">
+                <div class="accent-line" aria-hidden="true"></div>
+                <h2 id="ground-heading">Where we are</h2>
+                <p>Early testing with select clients. Measuring what works, what doesn't, and why. We're not launching a product. We're proving a methodology.</p>
+                <p>We're proving it before we explain it.</p>
+            </div>
+        </section>
 
-    <!-- ENGAGE: Action -->
-    <section class="signup-section">
-        <div class="signup-inner">
-            <h2>Get notified</h2>
-            <p>One email when Stage30™ opens up.</p>
-            <form class="signup-form" action="https://formspree.io/f/xwvwdpaa" method="POST">
-                <input type="email" name="email" placeholder="Your email" required>
-                <button type="submit">Notify Me</button>
-            </form>
-        </div>
-    </section>
+        <!-- ENGAGE: Action -->
+        <section class="signup-section" aria-labelledby="engage-heading">
+            <div class="signup-inner">
+                <h2 id="engage-heading">Get notified</h2>
+                <p>One email when Stage30™ opens up.</p>
+                <form class="signup-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <label for="email-input" class="sr-only">Email address</label>
+                    <input type="email" id="email-input" name="email" placeholder="Your email" required aria-required="true">
+                    <button type="submit">Notify Me</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <div>&copy; 2026 Stage30™. A <a href="https://castiron.la" class="footer-link">Cast Iron LA</a> methodology.</div>
-            <div><a href="mailto:hello@stage30.com" class="footer-link">hello@stage30.com</a></div>
+            <div>
+                <a href="privacy.html" class="footer-link">Privacy</a> &middot;
+                <a href="terms.html" class="footer-link">Terms</a> &middot;
+                <a href="mailto:hello@stage30.com" class="footer-link">hello@stage30.com</a>
+            </div>
         </div>
     </footer>
 </body>
