@@ -1,142 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Methodology - Stage30™</title>
-    <meta name="description" content="How Stage30™ works: we treat AI as a probability-collapse system, not a ranking engine. That changes everything about how brands should build for AI visibility.">
-    <meta property="og:title" content="Stage30™ Methodology">
-    <meta property="og:description" content="AI doesn't rank. It collapses probability. Stage30 builds the architecture that makes collapse happen at your brand.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://stage30.com/methodology">
-    <link rel="canonical" href="https://stage30.com/methodology">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Methodology - Stage30</title>
+  <meta name="description" content="Stage30 is resolution architecture for AI synthesis. Not SEO. Not content marketing. The structural layer that determines whether AI systems select your brand as the canonical answer.">
+  <meta property="og:title" content="Stage30 Methodology">
+  <meta property="og:description" content="AI doesn't rank. It resolves. Stage30 builds the architecture that makes resolution happen at your brand.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stage30.com/methodology">
+  <link rel="canonical" href="https://stage30.com/methodology">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    h1, h2, h3, h4, h5, h6 { text-transform: uppercase; }
+    nav a { text-transform: uppercase; color: #ffffff !important; letter-spacing: 0.08em; font-size: 0.8rem; font-weight: 500; }
+    nav a:hover { color: #E8460A !important; }
+    .stat-callout {
+      background: #0f0f0f;
+      border-left: 3px solid #E8460A;
+      padding: 2rem 2.5rem;
+      margin: 2.5rem 0;
+    }
+    .stat-number {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-weight: 900;
+      color: #E8460A;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      display: block;
+    }
+    .stat-label {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.7);
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+    }
+    .stat-source {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.35);
+      margin-top: 0.75rem;
+      font-style: italic;
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+    .stat-card {
+      background: rgba(232,70,10,0.06);
+      border: 1px solid rgba(232,70,10,0.2);
+      padding: 1.75rem;
+    }
+    .pullquote {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      border-top: 2px solid #E8460A;
+      padding-top: 1.5rem;
+      margin: 3rem 0;
+    }
+    .citation-block {
+      background: #0a0a0a;
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 1.5rem 2rem;
+      margin: 2rem 0;
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.5);
+    }
+    .citation-block strong { color: rgba(255,255,255,0.8); }
+    .framework-layer {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 2rem 0;
+    }
+    .framework-layer:first-child { border-top: none; }
+    .layer-number {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #E8460A;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .footnotes {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.7;
+    }
+    .footnotes ol { padding-left: 1.5rem; }
+    .footnotes li { margin-bottom: 0.75rem; }
+    sup a { color: #E8460A; text-decoration: none; font-size: 0.7em; }
+    @media (max-width: 768px) {
+      h1, h2, h3 { font-family: 'Barlow', sans-serif; }
+      .stat-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
 </head>
 <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-    <header role="banner">
-        <a href="index.html" class="logo" aria-label="Stage30 home">
-            <span class="logo-stage">STAGE</span><span class="logo-number">30</span><span class="logo-tm">™</span>
-        </a>
-        <nav aria-label="Main navigation">
-            <a href="methodology.html">Methodology</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <header role="banner">
+    <a href="index.html" class="logo" aria-label="Stage30 home">
+      <span class="logo-stage">STAGE</span><span class="logo-number">30</span><span class="logo-tm">TM</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="methodology.html">Methodology</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <main id="main">
-        <section class="hero" aria-labelledby="hero-heading">
-            <div class="hero-inner">
-                <h1 id="hero-heading">We didn't start<br>with answers.</h1>
-                <p>We started with a question nobody in the optimization world was asking: what if AI doesn't rank at all?</p>
-            </div>
-        </section>
+  <main id="main">
 
-        <section class="section" aria-labelledby="beginners-heading">
-            <div class="section-inner">
-                <div class="accent-line" aria-hidden="true"></div>
-                <h2 id="beginners-heading">Beginner's mind</h2>
-                <p>We came into AI without SEO baggage. No frameworks to protect. No assumptions about how ranking should translate to new systems.</p>
-                <p>That turned out to be an advantage. The people who'd spent years mastering search optimization looked at AI and saw a new ranking engine. We looked at it and saw something else entirely.</p>
-                <p>We didn't have a mental model to protect. So we built one from scratch.</p>
-            </div>
-        </section>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-label">METHODOLOGY</div>
+        <h1 class="hero-headline">RANKING #1<br>IS NO LONGER<br>RANKING FIRST.</h1>
+        <p class="hero-body">Analysis of over 4 million AI Overview citations reveals that even the #1 organic result has approximately a 33% probability of being cited in AI-generated answers. The remaining 67% goes to sources AI systems identify as structurally certain -- not keyword-optimized. Not highly ranked. Structurally certain. This is the Citation Probability Gap. This is what Stage30 closes.</p>
+      </div>
+    </section>
 
-        <section class="section section-dark" aria-labelledby="found-heading">
-            <div class="section-inner">
-                <div class="accent-line" aria-hidden="true"></div>
-                <h2 id="found-heading">What we found</h2>
-                <p>AI doesn't rank content. It collapses probability. When someone asks an AI a question, the system isn't searching for the best page. It's synthesizing across everything it knows and resolving toward the answer with the highest structural confidence.</p>
-                <p>That's a completely different mechanism. And it requires a completely different approach.</p>
-            </div>
-        </section>
+    <!-- THE DATA -->
+    <section class="section section-dark">
+      <div class="section-inner">
+        <div class="accent-line"></div>
+        <h2>THE DATA: OPEN SEASON ON SEARCH</h2>
+        <p>These are not projections. These are documented shifts in how AI synthesis engines select sources -- and they happened fast.</p>
 
-        <section class="section" aria-labelledby="hallways-heading">
-            <div class="section-inner">
-                <div class="accent-line" aria-hidden="true"></div>
-                <h2 id="hallways-heading">The hallways</h2>
-                <p>Most people who study AI visibility find one insight and plant their flag. Make content more extractable. Add structured data. Write for featured snippets.</p>
-                <p>We kept going. Past the obvious answers. Down hallways that didn't look productive at first. Through ideas that seemed disconnected until they weren't.</p>
-                <p>If you're doing the work right, it doesn't matter how it comes out. What matters is what goes in. We went further in than most people thought was useful.</p>
-                <p>That's where Stage30™ came from. Not from optimizing what already existed, but from understanding the system well enough to build for it.</p>
-            </div>
-        </section>
-
-        <section class="section section-dark" aria-labelledby="architecture-heading">
-            <div class="section-inner">
-                <div class="accent-line" aria-hidden="true"></div>
-                <h2 id="architecture-heading">Not optimization. Architecture.</h2>
-                <p>We treat AI like a probability-collapse system, not a ranking engine. That changes everything about how you build.</p>
-                <p>When someone asks an AI system a question, it doesn't scroll through a ranked list. It synthesizes across sources and resolves toward the answer with the strongest structural foundation.</p>
-                <p>Stage30™ builds the structural signals that cause that collapse to happen at your brand. Not through tricks or volume. Through the architecture that AI systems are already looking for.</p>
-            </div>
-        </section>
-
-        <section class="section" aria-labelledby="learned-heading">
-            <div class="section-inner">
-                <div class="accent-line" aria-hidden="true"></div>
-                <h2 id="learned-heading">What we've learned so far</h2>
-                <p>How information relates to other information matters as much as the information itself. A page full of correct facts, poorly structured, loses to a page with less information and better architecture.</p>
-                <p>Most web content isn't built this way. It's built to rank. We're building it to resolve.</p>
-            </div>
-        </section>
-
-        <section class="section section-dark" aria-labelledby="outcomes-heading">
-            <div class="section-inner">
-                <div class="accent-line" aria-hidden="true"></div>
-                <h2 id="outcomes-heading">Multiple outcomes, one foundation</h2>
-                <p>The structural approach we're developing doesn't just help with AI search. The same architecture that helps an AI system resolve uncertainty about your brand also helps it represent your brand accurately in conversation, recommend you appropriately, and protect your positioning.</p>
-                <p>That foundation supports AI search performance, brand protection, and the tools that are starting to replace traditional discovery.</p>
-            </div>
-        </section>
-
-        <section class="section" aria-labelledby="isnt-heading">
-            <div class="section-inner">
-                <div class="accent-line" aria-hidden="true"></div>
-                <h2 id="isnt-heading">What this isn't</h2>
-
-                <div class="grid-3" role="list">
-                    <div class="content-block" role="listitem">
-                        <h3>Not SEO 2.0</h3>
-                        <p>We're not adapting search optimization for AI. We're building from a different understanding of how AI systems actually work.</p>
-                    </div>
-
-                    <div class="content-block" role="listitem">
-                        <h3>Not content marketing</h3>
-                        <p>More content doesn't help if the structure is wrong. Less content with the right architecture outperforms volume every time.</p>
-                    </div>
-
-                    <div class="content-block" role="listitem">
-                        <h3>Not reputation management</h3>
-                        <p>We don't push things down or hide them. We build structures that make the full picture visible. That's what AI systems need to resolve uncertainty.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-dark" aria-labelledby="status-heading">
-            <div class="section-inner">
-                <div class="accent-line" aria-hidden="true"></div>
-                <h2 id="status-heading">Status</h2>
-                <p>We're proving it works before we explain how it works. Early testing is underway with select clients. Results are being documented.</p>
-                <p>When we're ready, we'll publish the full framework. Until then, the work speaks.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer role="contentinfo">
-        <div class="footer-content">
-            <div>&copy; 2026 Stage30™. A <a href="https://castiron.la" class="footer-link">Cast Iron LA</a> methodology.</div>
-            <div>
-                <a href="privacy.html" class="footer-link">Privacy</a> &middot;
-                <a href="terms.html" class="footer-link">Terms</a> &middot;
-                <a href="mailto:hello@stage30.com" class="footer-link">hello@stage30.com</a>
-            </div>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-number">33%</span>
+            <div class="stat-label">Citation probability at #1 organic</div>
+            <div class="stat-source">GetPassionFruit (2025) via The Digital Bloom 2026 AI Citation Report</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">62%+</span>
+            <div class="stat-label">AI citations from outside the top 10 results</div>
+            <div class="stat-source">Ahrefs, March 2026 -- 863K keywords, 4M+ AI Overview citations</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">-59%</span>
+            <div class="stat-label">Organic CTR drop when AI Overviews appear</div>
+            <div class="stat-source">Industry analysis of AI Overview impact, 2025-2026</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">48%</span>
+            <div class="stat-label">Google queries triggering an AI Overview in 2026</div>
+            <div class="stat-source">Google Search data, Q1 2026</div>
+          </div>
         </div>
-    </footer>
+
+        <div class="stat-callout">
+          <span class="stat-number">76% -- 17%</span>
+          <div class="stat-label">Top-10 overlap with AI citations: mid-2025 vs. early 2026</div>
+          <p style="color:rgba(255,255,255,0.6); margin-top:1rem; font-size:0.9rem;">In eighteen months, the overlap between traditional top-10 rankings and AI Overview citations collapsed from 76% to as low as 17%. AI systems are not reading your rankings. They are reading your structure.</p>
+          <div class="stat-source">Source: Ahrefs, March 2026 analysis</div>
+        </div>
+
+        <div class="pullquote">
+          Position #1 is a candidate.<br>Not a guarantee.
+        </div>
+
+        <p>The system didn't get harder. It got less forgiving. You can't say one thing, do another, and expect to be selected. That gap used to be invisible. Now it is the only thing being read.</p>
+
+        <div class="citation-block">
+          <strong>On citations and the cited:</strong> Pages featured in AI Overviews see 35%+ lifts in organic CTR and significantly higher conversion rates -- a citation premium that accrues to structurally authoritative sources. The question is no longer how to rank. It is how to be selected. Source: Industry analysis, 2025-2026.
+        </div>
+      </div>
+    </section>
+
+    <!-- ORIGIN STORY -->
+    <section class="section">
+      <div class="section-inner">
+        <div class="accent-line"></div>
+        <h2>WHERE THIS COMES FROM</h2>
+        <p>Every decade, a new channel opened. Every time, the brands that understood what that channel actually was -- not just how to post to it -- won.</p>
+
+        <div class="framework-layer">
+          <div class="layer-number">Mid-1990s -- The Web</div>
+          <h3>IT HAD TO BE AS DEPENDABLE AS THE PRODUCT</h3>
+          <p>Working on Honda's first website, the standard was clear: this site must be DQR. Dependable, Quality, Reliable. Not because someone said so. Because the site represented the vehicle. A car known for those qualities needed a web presence that held to the same standard. The website was not a brochure. It was a representation.</p>
+        </div>
+
+        <div class="framework-layer">
+          <div class="layer-number">2000s -- Social Media</div>
+          <h3>THE BRAND HAD TO BEHAVE LIKE A PERSON</h3>
+          <p>Social media arrived. The question it asked was different: what would this brand say if it were human? That required craft. Not interns. Not scheduled posts. An experienced writer who understood that a brand speaking on Valentine's Day about something entirely off-topic had to find the thread that connected. That was the thinking. It worked for a long time.</p>
+        </div>
+
+        <div class="framework-layer">
+          <div class="layer-number">2010s -- Reviews and Comments</div>
+          <h3>YOU COULD NOT DELETE YOUR WAY OUT</h3>
+          <p>Then came the reviews. The comments. The rating systems. Agencies -- including ours -- tried to treat it as a small thing. Threw interns at it. The lesson came fast: you cannot delete your way to a clean reputation. A bad comment is not a post. It is a data point in a graph. That graph is real. It persists.</p>
+        </div>
+
+        <div class="framework-layer">
+          <div class="layer-number">2024 and forward -- AI Synthesis</div>
+          <h3>YOUR ENTIRE GRAPH IS NOW ON TRIAL</h3>
+          <p>AI search does not read your homepage and make a decision. It reads your homepage, your reviews, a comment someone left at 2am in Topeka, your press release from 2019, what your customer service said in a reply last Tuesday -- and it collapses all of it into a single probabilistic judgment about your brand. In 0.3 seconds. Every single time. With no memory of who you used to be.</p>
+          <p>This is not a new channel. It is a new standard of scrutiny. And it enforces something the internet was always supposed to require but never actually did: coherence.</p>
+        </div>
+
+        <div class="pullquote">
+          AI didn't change the rules.<br>It started enforcing the original ones.
+        </div>
+
+        <p>HTML was meant to structure meaning. Schema tried to formalize it. SEO exploited visibility instead. The AI synthesis layer is now enforcing what was always supposed to be true: that the structure of information and the credibility of the source are what determine whether you get selected.</p>
+      </div>
+    </section>
+
+    <!-- THE REAL PROBLEM -->
+    <section class="section section-dark">
+      <div class="section-inner">
+        <div class="accent-line"></div>
+        <h2>WHAT ACTUALLY FAILS</h2>
+
+        <p>LLMs are not fooled by the tricks that worked on crawlers. Keywords, volume, entropy -- the spray-and-pray approach that moved rankings -- reads as noise to a synthesis layer. LLMs are looking for specificity. Coherence. Signal that holds across surfaces.</p>
+
+        <p>Most brands fail that test in three specific ways:</p>
+
+        <div class="stat-callout">
+          <div class="stat-label">Failure Mode 1: Continuity</div>
+          <p style="color:rgba(255,255,255,0.75); margin-top:0.75rem;">What the homepage says does not match what the CEO said in a press release. What the sales page claims does not match what customer service explains in a reply. The AI reads all of it. The gaps register -- not as a ranking penalty, but as an unresolved signal. Unresolved signals do not get selected.</p>
+        </div>
+
+        <div class="stat-callout">
+          <div class="stat-label">Failure Mode 2: Third-Party Gap</div>
+          <p style="color:rgba(255,255,255,0.75); margin-top:0.75rem;">What people say about the brand is different from what the brand says about itself. That distance is a red flag. The AI synthesis layer reads both. When they don't align, the brand reads as unstable. Unstable sources do not get cited as authoritative.</p>
+        </div>
+
+        <div class="stat-callout">
+          <div class="stat-label">Failure Mode 3: Resolution Failure</div>
+          <p style="color:rgba(255,255,255,0.75); margin-top:0.75rem;">When someone says something critical -- a bad review, a public complaint -- the brand ignores it, deletes it, or responds in a way that doesn't close the loop. AI systems want resolution. Not perfection. Resolution. A brand that acknowledges, responds, and moves forward reads as trustworthy. A brand that avoids or deflects reads as a brand that cannot hold up under pressure.</p>
+        </div>
+
+        <div class="pullquote">
+          LLMs don't care about perfection.<br>They're looking for resolution.
+        </div>
+
+        <p>That is not a metaphor. That is literally how synthesis works. The model is not grading you on whether you were right. It is reading whether the situation came to a close. Whether the brand held up through the tension, not just before it.</p>
+
+        <p>Brands that are afraid to take a side, that soften every claim, that hedge every statement -- they have moved toward entropy. Terminal answers do not come from entropy. AI systems collapse toward certainty. They select sources that reduce the cost of inference, not sources that require more of it.</p>
+      </div>
+    </section>
+
+    <!-- THE FRAMEWORK -->
+    <section class="section">
+      <div class="section-inner">
+        <div class="accent-line"></div>
+        <h2>THE STAGE30 FRAMEWORK</h2>
+        <p>Stage30 is HTML for AI synthesis. It treats the website not as a document to be read, but as a knowledge graph to be extracted from. The methodology targets the structural signals AI engines use to identify canonical sources.</p>
+
+        <div class="framework-layer">
+          <div class="layer-number">Layer 01</div>
+          <h3>EXACT ECHO PHRASES</h3>
+          <p>The precise language people use when they are searching under uncertainty or fear. Not keyword approximations. The exact phrasing that signals the retrieval hook -- the phrase that causes the AI's sub-query to resolve toward your content. These become the entry points through which the synthesis layer finds you.</p>
+        </div>
+
+        <div class="framework-layer">
+          <div class="layer-number">Layer 02</div>
+          <h3>ENTITY CHAINS (@id ARCHITECTURE)</h3>
+          <p>Linking brand entities to permanent, verifiable identifiers -- professional profiles, industry registrations, lab certifications, business records. This creates an undeniable authority pattern in the knowledge graph. The AI can follow the chain and verify the claim. Sources it can verify, it trusts.</p>
+        </div>
+
+        <div class="framework-layer">
+          <div class="layer-number">Layer 03</div>
+          <h3>SEMANTIC HTML5</h3>
+          <p>Using dfn, dl, data, and custom data- attributes to provide machine-readable structure that reduces the AI's inference cost to near-zero. When the AI does not have to infer what something means -- because the structure tells it -- that source wins the selection event.</p>
+        </div>
+
+        <div class="framework-layer">
+          <div class="layer-number">Layer 04</div>
+          <h3>SCHEMA AND JSON-LD PRECISION</h3>
+          <p>QuantitativeValue. MedicalGuideline. Entity linking via sameAs. Outcome-based product schemas. These translate marketing claims into verifiable data points. An AI synthesis engine does not read your headline as a brand claim. It reads your schema as a structured fact. We build the schema that supports that read.</p>
+        </div>
+
+        <div class="framework-layer">
+          <div class="layer-number">Layer 05</div>
+          <h3>TERMINAL COLLAPSE GLOSSARIES AND llms.txt</h3>
+          <p>AI-ready reference materials -- definition lists for domain terminology, /llms.txt files that serve as direct model instructions -- ensuring consistent interpretation across every synthesis event. When the AI encounters your brand across multiple sources, it should resolve to the same answer every time. Terminal glossaries make that possible.</p>
+        </div>
+
+        <div class="pullquote">
+          Most people are trying to improve<br>what gets said about them.<br>We design what can be said<br>in the first place.
+        </div>
+      </div>
+    </section>
+
+    <!-- THE MATH -->
+    <section class="section section-dark">
+      <div class="section-inner">
+        <div class="accent-line"></div>
+        <h2>THE INTERPRETIVE MATH</h2>
+
+        <p>If baseline citation probability for even a #1 result is approximately 33%, and Stage30 implementation moves brands toward high-certainty terminal status -- approaching the upper bounds of citation probability -- the effective visibility multiplier is approximately 3x. That is the inverse of the baseline gap.</p>
+
+        <div class="stat-callout">
+          <span class="stat-number">~3x</span>
+          <div class="stat-label">Effective citation multiplier: from candidate to canonical</div>
+          <p style="color:rgba(255,255,255,0.6); margin-top:1rem; font-size:0.875rem;">This is not a guaranteed outcome. It is the mathematical implication of moving from stochastic candidate status (33% at best) to deterministic canonical answer status. When layered with the documented 35%+ organic CTR lift for AI-cited pages, the compounding effect on brand visibility is the Stage30 delta.</p>
+        </div>
+
+        <p>You optimized your pages. You improved your rankings. You followed everything you were told to do. And still -- something stopped clicking. Not traffic. Not impressions. Selection.</p>
+
+        <p>That is the gap Stage30 closes. You do not need more content. You need fewer contradictions. You need the structure that causes an AI synthesis engine to look at your brand and say: this resolves.</p>
+
+        <div class="pullquote">
+          The AI's path of least resistance<br>becomes your brand.
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT THIS ISN'T -->
+    <section class="section">
+      <div class="section-inner">
+        <div class="accent-line"></div>
+        <h2>WHAT THIS IS NOT</h2>
+
+        <div class="framework-layer">
+          <h3>NOT SEO 2.0</h3>
+          <p>We are not adapting search optimization for AI. AI does not rank. It resolves. Those are different operations requiring different architecture entirely.</p>
+        </div>
+
+        <div class="framework-layer">
+          <h3>NOT CONTENT MARKETING</h3>
+          <p>More content does not help if the structure is wrong. Less content with the right architecture outperforms volume every time. AI synthesis engines are not impressed by quantity. They are looking for the source that costs the least to extract certainty from.</p>
+        </div>
+
+        <div class="framework-layer">
+          <h3>NOT REPUTATION MANAGEMENT</h3>
+          <p>We do not push things down or hide them. We build structures that make the full picture visible and resolvable. AI systems read everything. The strategy is not suppression. The strategy is coherence.</p>
+        </div>
+
+        <div class="framework-layer">
+          <h3>NOT ANOTHER AGENCY PIVOT</h3>
+          <p>Most people selling AI search strategy learned SEO and then pivoted. This methodology came from understanding what it means for a brand to hold up under pressure -- built across three decades of web, social, and reputation work with brands that could not afford to fail. That is a different thing entirely.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATUS -->
+    <section class="section section-dark">
+      <div class="section-inner">
+        <div class="accent-line"></div>
+        <h2>WHERE WE ARE</h2>
+        <p>Stage30 is in early testing with select clients across cannabis wellness, gaming finance, and professional services. We are measuring what works, what does not, and why. We are documenting results before publishing claims.</p>
+        <p>We prove it before we explain it. The work speaks first.</p>
+        <p>If your brand is losing selection events it should be winning -- contact us. We will tell you whether Stage30 applies to your situation, and if it does, what closing the gap looks like.</p>
+
+        <div class="footnotes">
+          <h3>SOURCES AND ATTRIBUTION</h3>
+          <ol>
+            <li>GetPassionFruit (2025) analysis via The Digital Bloom, "2026 AI Citation Position and Revenue Report." Position #1 citation probability: approximately 33.07%. This represents the probability that the top-ranked organic result for a given query is cited by the AI Overview for that same query.</li>
+            <li>Ahrefs (March 2026): Analysis of 863,000 keywords and 4+ million AI Overview citations. Top-10 overlap with AI citations declined from approximately 76% in mid-2025 to 17-38% by early 2026, depending on query type. Over 62% of AI citations now come from outside traditional top-10 results.</li>
+            <li>Industry analysis of AI Overview impact on organic search, 2025-2026: Organic click-through rates drop 58-61% on average when AI Overviews appear. Pages cited within AI Overviews see 35%+ lifts in organic CTR and higher conversion rates.</li>
+            <li>Google Search data, Q1 2026: Approximately 48% of Google queries now trigger an AI Overview response.</li>
+            <li>Stage30 technical analysis of AI retrieval architecture and query fan-out mechanisms, 2024-2026. Modern AI synthesis engines decompose a single user query into 8-12 parallel sub-queries executed against multiple indexes simultaneously. This explains why AI Overviews frequently cite pages not ranked in the top 100 for the original query.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-content">
+      <div>2026 Stage30. Built by <a href="https://castiron.la" class="footer-link">Cast Iron LA</a></div>
+      <div>
+        <a href="privacy.html" class="footer-link">Privacy</a>
+        &middot;
+        <a href="terms.html" class="footer-link">Terms</a>
+        &middot;
+        <a href="mailto:hello@stage30.com" class="footer-link">hello@stage30.com</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
