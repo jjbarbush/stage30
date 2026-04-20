@@ -1,1035 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Canon - What AI Search Actually Does to Your Brand | Stage30</title>
-  <meta name="description" content="The research on AI search, plain language. 25 sourced stats on how AI selects brands. Built for humans. Structured for machines.">
-  <meta property="og:title" content="The Canon - What AI Search Actually Does to Your Brand">
-  <meta property="og:description" content="AI doesn't rank your brand. It selects it. Or doesn't. Every single time someone asks a question. Here is the research behind that.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://stage30.com/canon">
-  <link rel="canonical" href="https://stage30.com/canon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "name": "What AI Search Actually Does to Your Brand",
-    "description": "25 sourced research nodes on AI search selection, citation, retrieval, volatility, platform architecture, brand signal, and measurement.",
-    "url": "https://stage30.com/canon",
-    "publisher": {
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Canon: What AI Search Actually Does to Your Brand | Stage30</title>
+<meta name="description" content="Six sourced findings on how AI search selects brands. Plain language. Built for humans. Structured for machines.">
+<meta name="author" content="John Barbush">
+<meta property="og:title" content="The Canon: What AI Search Actually Does to Your Brand">
+<meta property="og:description" content="AI doesn't rank your brand. It selects it. Or doesn't. Every single time someone asks a question.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://stage30.com/canon">
+<link rel="canonical" href="https://stage30.com/canon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
       "@type": "Organization",
       "@id": "https://stage30.com/#organization",
       "name": "Stage30",
-      "url": "https://stage30.com"
-    },
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Does ranking higher in AI search mean my brand gets recommended more?",
-        "@id": "https://stage30.com/canon#AIRankingInstability",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "There is no rank to hold in AI search. There is only selection probability to engineer. SparkToro and Gumshoe.ai tested 2,961 prompts with 600 volunteers and found less than 1-in-100 chance of the same brand list appearing twice, and less than 1-in-1,000 chance of any brand appearing in the same position twice. A brand that shows up in 70% of relevant AI responses without a stable position beats a brand that ranked number one in a single screenshot every time.",
-          "citation": "https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "If my brand is a category leader, am I protected from AI search volatility?",
-        "@id": "https://stage30.com/canon#LeaderSelectionFloor",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Category leadership earns a higher selection probability. It does not earn a guaranteed presence. SparkToro and Gumshoe.ai found top brands appeared in 55 to 77 percent of AI runs, meaning category leaders are absent 23 to 45 percent of the time with no change in content or authority. The AI selects whoever makes its job easiest right now.",
-          "citation": "https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does AI citation performance vary by platform?",
-        "@id": "https://stage30.com/canon#PlatformVariance615x",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A single-platform citation score is not a visibility score. Superlines found 615 times more variation in citation rates for the same brand across different AI platforms than within any single platform. The only signal that travels reliably across all platforms is structure.",
-          "citation": "https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "If I optimize for ChatGPT, does that carry over to Perplexity?",
-        "@id": "https://stage30.com/canon#CrossPlatformOverlap11pct",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Optimizing for one AI platform does not transfer to others. Ahrefs and Profound cross-dataset analysis found only 11 percent of domains cited by ChatGPT are also cited by Perplexity. 89 percent of cited domains are platform-exclusive. Structure is the only signal all platforms evaluate the same way.",
-          "citation": "https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "My AI tracking dashboard shows citations are up. Why is pipeline flat?",
-        "@id": "https://stage30.com/canon#GhostCitation541k",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A rising citation count can mean your content is becoming more useful to AI systems while your brand becomes less visible to users. Seer Interactive analyzed 541,213 LLM responses across 20 brands and found in one documented case a client blog post was cited over 100 times in 25 days with zero brand mentions. Content that serves the model without naming the brand is ghost infrastructure.",
-          "citation": "https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "If ChatGPT retrieves my content, does that mean users will see my brand?",
-        "@id": "https://stage30.com/canon#85pctInvisibleRetrieval",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Being retrievable is not the same as being visible. AirOps analyzed 548,534 pages retrieved by ChatGPT across 15,000 prompts. Only 15 percent of those pages appeared in the final response. 85 percent of what ChatGPT fetched was never shown to the user. Getting retrieved is not the goal. Getting used is. The difference is structure.",
-          "citation": "https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does adding structured data and FAQ markup increase AI citations?",
-        "@id": "https://stage30.com/canon#StructuredDataLift44pct",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sites implementing structured data and FAQ blocks saw a 44 percent increase in AI citation rates according to BrightEdge research from 2025 to 2026. Structure is not decoration. It is the admission requirement for AI synthesis.",
-          "citation": "https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search"
-        }
+      "url": "https://stage30.com",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Cast Iron LA"
       }
-    ]
-  }
-  </script>
-  <style>
-    h1, h2, h3, h4, h5, h6 { text-transform: uppercase; }
-    nav a { text-transform: uppercase; color: #ffffff !important; letter-spacing: 0.08em; font-size: 0.8rem; font-weight: 500; }
-    nav a:hover { color: #E8460A !important; }
-    .canon-intro { max-width: 720px; padding: 5rem 2rem 3rem; }
-    .canon-intro .hero-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; font-weight: 700; color: #E8460A; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.5rem; }
-    .canon-intro h1 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 900; color: #ffffff; text-transform: uppercase; line-height: 1.05; letter-spacing: -0.01em; margin-bottom: 2rem; }
-    .canon-intro .steve-block { border-left: 3px solid #E8460A; padding-left: 2rem; margin: 2rem 0; }
-    .canon-intro .steve-block p { font-size: 1.05rem; color: rgba(255,255,255,0.85); line-height: 1.75; margin-bottom: 1rem; }
-    .canon-intro .reckoning-block { background: #0f0f0f; padding: 2rem 2.5rem; margin: 2.5rem 0; border-top: 2px solid rgba(232,70,10,0.3); }
-    .canon-intro .reckoning-block p { font-size: 0.95rem; color: rgba(255,255,255,0.65); line-height: 1.8; margin-bottom: 1rem; }
-    .canon-intro .reckoning-block p:last-child { margin-bottom: 0; }
-    .canon-intro .reckoning-block strong { color: rgba(255,255,255,0.9); }
-    .canon-toc { padding: 2rem; background: #0a0a0a; border: 1px solid rgba(255,255,255,0.06); max-width: 720px; margin: 0 2rem 4rem; }
-    .canon-toc h2 { font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; font-weight: 700; color: #E8460A; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1rem; }
-    .canon-toc ol { padding-left: 1.5rem; margin: 0; }
-    .canon-toc li { color: rgba(255,255,255,0.6); font-size: 0.875rem; margin-bottom: 0.5rem; line-height: 1.5; }
-    .canon-toc a { color: rgba(255,255,255,0.75); text-decoration: none; }
-    .canon-toc a:hover { color: #E8460A; }
-    .canon-section { padding: 4rem 2rem 2rem; border-top: 1px solid rgba(255,255,255,0.08); max-width: 900px; }
-    .canon-section-header { margin-bottom: 2rem; }
-    .canon-section-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; font-weight: 700; color: #E8460A; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.75rem; }
-    .canon-section-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; color: #ffffff; text-transform: uppercase; line-height: 1.1; }
-    .canon-section-intro { font-size: 0.95rem; color: rgba(255,255,255,0.55); line-height: 1.75; max-width: 680px; margin-top: 1rem; }
-    .canon-node { background: #0a0a0a; border: 1px solid rgba(255,255,255,0.07); padding: 2.5rem; margin: 2rem 0; }
-    .canon-node:hover { border-color: rgba(232,70,10,0.25); }
-    .node-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.7rem; font-weight: 700; color: rgba(232,70,10,0.7); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1rem; }
-    .node-question { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.2rem, 3vw, 1.7rem); font-weight: 700; color: #ffffff; text-transform: uppercase; line-height: 1.2; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 1rem; }
-    .node-situation { margin-bottom: 1.25rem; }
-    .node-situation-label { font-size: 0.7rem; font-weight: 700; color: rgba(255,255,255,0.35); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.4rem; }
-    .node-situation p { font-size: 0.95rem; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 0.75rem; }
-    .node-truth { margin-bottom: 1.25rem; }
-    .node-truth-label { font-size: 0.7rem; font-weight: 700; color: rgba(255,255,255,0.35); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.4rem; }
-    .node-truth p { font-size: 0.95rem; color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 0.75rem; }
-    .node-nucleus { background: #0f0f0f; border-left: 3px solid #E8460A; padding: 1.5rem 2rem; margin: 1.5rem 0; }
-    .node-nucleus-label { font-size: 0.7rem; font-weight: 700; color: rgba(232,70,10,0.7); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.75rem; }
-    .node-nucleus .stat-headline { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.2rem, 3vw, 1.7rem); font-weight: 700; color: #E8460A; line-height: 1.15; margin-bottom: 0.75rem; }
-    .node-nucleus p { font-size: 0.9rem; color: rgba(255,255,255,0.65); line-height: 1.7; margin-bottom: 0.5rem; }
-    .node-meaning { margin-bottom: 1.25rem; }
-    .node-meaning-label { font-size: 0.7rem; font-weight: 700; color: rgba(255,255,255,0.35); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.4rem; }
-    .node-meaning p { font-size: 0.95rem; color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 0.75rem; }
-    .node-stage30 { background: rgba(232,70,10,0.05); border: 1px solid rgba(232,70,10,0.15); padding: 1.25rem 1.75rem; margin: 1.5rem 0 0; }
-    .node-stage30-label { font-size: 0.65rem; font-weight: 700; color: #E8460A; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.4rem; }
-    .node-stage30 p { font-size: 0.875rem; color: rgba(255,255,255,0.8); line-height: 1.65; margin: 0; }
-    .node-source { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); font-size: 0.775rem; color: rgba(255,255,255,0.3); line-height: 1.65; }
-    .node-source a { color: rgba(232,70,10,0.7); text-decoration: none; }
-    .node-source a:hover { color: #E8460A; }
-    .pullquote { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.4rem, 3.5vw, 2.2rem); font-weight: 700; color: #ffffff; line-height: 1.2; text-transform: uppercase; border-top: 2px solid #E8460A; padding-top: 1.5rem; margin: 3rem 0; max-width: 680px; }
-    @media (max-width: 768px) {
-      .canon-intro, .canon-toc, .canon-section { padding-left: 1.25rem; padding-right: 1.25rem; }
-      .canon-toc { margin-left: 1.25rem; margin-right: 1.25rem; }
-      .canon-node { padding: 1.5rem; }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://stage30.com/#website",
+      "url": "https://stage30.com",
+      "name": "Stage30",
+      "publisher": {
+        "@id": "https://stage30.com/#organization"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://stage30.com/#person-jbarbush",
+      "name": "John Barbush",
+      "alternateName": "J. Barbush",
+      "jobTitle": "Founder, Stage30",
+      "url": "https://stage30.com",
+      "sameAs": [
+        "https://jbarbush.com"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://stage30.com/canon#webpage",
+      "url": "https://stage30.com/canon",
+      "name": "The Canon: What AI Search Actually Does to Your Brand",
+      "isPartOf": {
+        "@id": "https://stage30.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://stage30.com/canon#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://stage30.com/canon#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://stage30.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The Canon",
+          "item": "https://stage30.com/canon"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://stage30.com/canon#article",
+      "headline": "The Canon: What AI Search Actually Does to Your Brand",
+      "author": {
+        "@id": "https://stage30.com/#person-jbarbush"
+      },
+      "publisher": {
+        "@id": "https://stage30.com/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://stage30.com/canon#webpage"
+      },
+      "datePublished": "2026-04-20",
+      "dateModified": "2026-04-20"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://stage30.com/canon#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does ranking higher in AI search mean my brand gets recommended more?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no rank to hold. SparkToro and Gumshoe.ai tested 2,961 prompts with 600 volunteers and found less than a 1-in-100 chance of the same brand list appearing twice, and less than a 1-in-1,000 chance of any brand appearing in the same position twice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "If ChatGPT retrieves my content, will users see my brand?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Being retrievable is not being visible. AirOps analyzed 548,534 pages retrieved by ChatGPT across 15,000 prompts. Only 15 percent appeared in the final response. 85 percent was fetched and set aside."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My AI dashboard shows citations are up. Why is pipeline flat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Seer Interactive analyzed 541,213 LLM responses and documented a case where one client blog post was cited over 100 times in 25 days with zero brand mentions. The model used the content. The brand got nothing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where do AI citations about my brand actually come from?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Omniscient Digital analyzed 23,387 branded citations: 48 percent earned media, 30 percent commercial content, 23 percent owned pages. Most of what AI says about your brand started somewhere you did not write."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does an AI citation last once a brand earns it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Profound tracked 680 million citations over nine months. 40 to 60 percent of cited domains changed month over month. The compounding asset model does not hold."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does AI citation performance vary by platform?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Superlines found 615 times more variation in citation rates for the same brand across different AI platforms than within any single platform. A ChatGPT score is not an AI score."
+          }
+        }
+      ]
     }
-  </style>
+  ]
+}
+</script>
+
+<style>
+h1, h2, h3, h4, h5, h6 { text-transform: uppercase; }
+nav a { text-transform: uppercase; color: #ffffff !important; letter-spacing: 0.08em; font-size: 0.8rem; font-weight: 500; }
+nav a:hover { color: #E8460A !important; }
+
+.canon-intro { max-width: 720px; padding: 5rem 2rem 3rem; }
+.canon-intro .hero-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; font-weight: 700; color: #E8460A; letter-spacing: 0.15em; margin-bottom: 1.5rem; }
+.canon-intro h1 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 800; color: #ffffff; line-height: 1.05; letter-spacing: 0; margin-bottom: 2rem; }
+.canon-byline { font-size: 0.8rem; color: rgba(255,255,255,0.5); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2rem; }
+.canon-byline span { color: rgba(255,255,255,0.85); }
+.canon-intro .steve-block { border-left: 3px solid #E8460A; padding-left: 2rem; margin: 2rem 0; }
+.canon-intro .steve-block p { font-size: 1.05rem; color: rgba(255,255,255,0.85); line-height: 1.75; margin-bottom: 1rem; }
+.canon-note { color: rgba(255,255,255,0.5); font-size: 0.875rem; line-height: 1.7; margin-top: 2rem; }
+
+.canon-flow { max-width: 900px; padding: 2rem; margin: 0 auto; }
+
+.canon-node { background: #0a0a0a; border: 1px solid rgba(255,255,255,0.07); padding: 2.5rem; margin: 2rem 0; position: relative; }
+.canon-node:hover { border-color: rgba(232,70,10,0.25); }
+.node-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.7rem; font-weight: 700; color: rgba(232,70,10,0.7); letter-spacing: 0.2em; margin-bottom: 1rem; }
+.node-question { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.2rem, 3vw, 1.7rem); font-weight: 600; color: #ffffff; line-height: 1.2; letter-spacing: 0.015em; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 1rem; }
+.node-body p { font-size: 0.95rem; color: rgba(255,255,255,0.75); line-height: 1.75; margin-bottom: 1rem; }
+
+.node-nucleus { background: #0f0f0f; border-left: 3px solid #E8460A; padding: 1.5rem 2rem; margin: 1.5rem 0; }
+.node-nucleus .stat-headline { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.2rem, 3vw, 1.7rem); font-weight: 700; color: #E8460A; line-height: 1.15; margin-bottom: 0.75rem; letter-spacing: 0; }
+.node-nucleus p { font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.7; margin: 0; }
+
+.node-stage30 { background: rgba(232,70,10,0.05); border: 1px solid rgba(232,70,10,0.15); padding: 1.25rem 1.75rem; margin: 1.5rem 0 0; }
+.node-stage30-label { font-size: 0.65rem; font-weight: 700; color: #E8460A; letter-spacing: 0.2em; margin-bottom: 0.4rem; }
+.node-stage30 p { font-size: 0.875rem; color: rgba(255,255,255,0.85); line-height: 1.65; margin: 0; }
+
+.node-source { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); font-size: 0.775rem; color: rgba(255,255,255,0.4); line-height: 1.65; }
+.node-source a { color: rgba(232,70,10,0.7); text-decoration: none; }
+.node-source a:hover { color: #E8460A; }
+
+.node-chart { margin: 1.5rem 0; padding: 1rem; background: #050505; border: 1px solid rgba(255,255,255,0.05); }
+.node-chart svg { width: 100%; height: auto; display: block; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+.pullquote { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.4rem, 3.5vw, 2.2rem); font-weight: 700; color: #ffffff; line-height: 1.2; text-transform: uppercase; border-top: 2px solid #E8460A; padding-top: 1.5rem; margin: 3rem auto; max-width: 680px; letter-spacing: 0; }
+
+.canon-outro { max-width: 720px; padding: 3rem 2rem 5rem; border-top: 1px solid rgba(255,255,255,0.08); margin: 3rem auto 0; }
+.canon-outro p { font-size: 0.95rem; color: rgba(255,255,255,0.65); line-height: 1.75; margin-bottom: 1rem; }
+.canon-outro a { color: #E8460A; text-decoration: none; }
+
+.bg-node { position: fixed; pointer-events: none; opacity: 0.04; z-index: 0; }
+.bg-node-1 { top: 12%; right: -100px; width: 500px; }
+.bg-node-2 { bottom: 8%; left: -120px; width: 600px; }
+@media (prefers-reduced-motion: reduce) { .bg-node { display: none; } }
+
+main { position: relative; z-index: 1; }
+
+@media (max-width: 768px) {
+  .canon-intro, .canon-flow, .canon-outro { padding-left: 1.25rem; padding-right: 1.25rem; }
+  .canon-node { padding: 1.5rem; }
+}
+</style>
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
-  <header role="banner">
-    <a href="index.html" class="logo" aria-label="Stage30 home">
-      <span class="logo-stage">STAGE</span><span class="logo-number">30</span><span class="logo-tm">TM</span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="methodology.html">Methodology</a>
-      <a href="canon.html" aria-current="page">The Canon</a>
-      <a href="origin.html">Origin</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<a href="#main" class="skip-link">Skip to main content</a>
 
-  <main id="main">
+<header role="banner">
+  <a href="index.html" class="logo" aria-label="Stage30 home">
+    <span class="logo-stage">STAGE</span><span class="logo-number">30</span><span class="logo-tm" aria-hidden="true">TM</span><span class="sr-only">trademark</span>
+  </a>
+  <nav aria-label="Main navigation">
+    <a href="methodology.html">Methodology</a>
+    <a href="canon.html" aria-current="page">The Canon</a>
+    <a href="origin.html">Origin</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-    <!-- PAGE OPENER -->
-    <section class="canon-intro">
-      <div class="hero-label">THE CANON</div>
-      <h1>What AI Search Actually Does<br>to Your Brand</h1>
+<svg class="bg-node bg-node-1" viewBox="0 0 200 100" aria-hidden="true">
+  <rect x="10" y="20" width="40" height="60" fill="#E8460A"/>
+  <rect x="60" y="50" width="40" height="30" fill="#E8460A"/>
+  <rect x="110" y="65" width="40" height="15" fill="#E8460A"/>
+  <rect x="160" y="73" width="30" height="7" fill="#E8460A"/>
+</svg>
+<svg class="bg-node bg-node-2" viewBox="0 0 100 100" aria-hidden="true">
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#E8460A" stroke-width="10" stroke-dasharray="42 240"/>
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#ffffff" stroke-width="10" stroke-dasharray="240 42" stroke-dashoffset="-42"/>
+</svg>
 
-      <div class="steve-block">
-        <p>Steve means well.</p>
-        <p>He has been your SEO guy for three years. He brings bagels to the quarterly. He has a slide deck that shows your brand ranking number four in ChatGPT for your top category query. He has circled it in orange. He is proud of it.</p>
-        <p>Steve is not wrong that the number exists. He is wrong about what it means.</p>
-        <p>AI search is not a ranking system. It does not work like Google. It does not assign positions that hold. It selects, freshly, probabilistically, differently, every single time someone asks a question. The orange circle on Steve's slide is a screenshot of one moment in a system that had likely already changed by the time he hit print.</p>
-        <p>This isn't instability at the edges. This is all of search. The whole thing re-stacks. Constantly. Rarely the same way twice.</p>
+<main id="main">
+
+  <section class="canon-intro">
+    <div class="hero-label">THE CANON</div>
+    <h1>What AI Search Actually Does<br>to Your Brand</h1>
+    <div class="canon-byline">By <span>J. Barbush</span> &nbsp;&middot;&nbsp; Founder, Stage30&trade;</div>
+
+    <div class="steve-block">
+      <p>Steve means well. He has been your SEO guy for three years. He brings bagels to the quarterly. He has a slide that shows your brand ranking number four in ChatGPT for your top category query. He has circled it in orange. He is proud of it.</p>
+      <p>Steve is not wrong that the number exists. He is wrong about what it means. AI search does not assign positions that hold. It selects, freshly, every single time someone asks. The orange circle on Steve's slide is a screenshot of one moment in a system that had already moved on by the time he hit print.</p>
+    </div>
+
+    <p class="canon-note">Six findings. Sourced. Linked. Use them.</p>
+  </section>
+
+  <div class="canon-flow">
+
+    <article class="canon-node" id="node-1-1" itemscope itemtype="https://schema.org/Question">
+      <div class="node-label">Finding 01</div>
+      <h2 class="node-question" itemprop="name">Does ranking higher in AI search mean my brand gets recommended more?</h2>
+      <div class="node-body">
+        <p>There is no number four. AI does not hold positions between queries. It re-evaluates from scratch every single time. What Steve screenshotted was one output of a system that had already changed by the time he hit print.</p>
       </div>
 
-      <div class="reckoning-block">
-        <p>For about thirty years, the game was this: whoever controlled the top of search results controlled the sale. It did not matter if you were the best answer. It mattered that you were the first answer. SEO was triage for a broken system, one we helped break. Keywords stuffed into pages no one read. Backlinks from sites that existed only to sell backlinks. Taglines like <strong>"Built for the road ahead."</strong> Every car company. Every software brand. Every agency that needed to sound like they meant something. Clever noise. Designed to rank, not to mean.</p>
-        <p>The consumer was the last consideration. We cared about the sale.</p>
-        <p>That is over now. AI search is a fundamentally different referee. It does not rank what you have optimized. It selects what it trusts. You cannot keyword-stuff your way into an AI citation. You cannot write a tagline that resolves cleanly when a model tries to find the meaning. "Built for the road ahead" is entropy. The model tries to extract meaning. What road? Ahead of what? It finds a hundred brands saying the same thing. The probability distributes across all of them. None of them get the citation. Or the model gets confused and gives you someone else's answer. That is the wobble. And wobble, at scale, can become hallucination. One and done.</p>
-        <p>The system is now fast enough to be the consumer's advocate in a way no search engine ever was. It limits hiding places. Stage30 is not the next trick. It is the honest response.</p>
+      <div class="node-chart" role="img" aria-label="Bar chart showing less than 1 percent reproducibility for AI brand recommendations">
+        <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <title>AI brand recommendation reproducibility</title>
+          <desc>Less than 1 in 100 chance the same brand list appears twice. Less than 1 in 1,000 chance any brand holds the same position twice.</desc>
+          <text x="0" y="15" fill="#E8460A" font-family="Barlow Condensed, sans-serif" font-size="11" font-weight="700" letter-spacing="2">REPRODUCIBILITY ACROSS 2,961 PROMPTS</text>
+          <g font-family="Barlow, sans-serif" font-size="11" fill="rgba(255,255,255,0.7)">
+            <text x="0" y="55">Same brand list, twice</text>
+            <rect x="0" y="62" width="3.6" height="18" fill="#E8460A"/>
+            <text x="14" y="76" fill="#ffffff" font-weight="500">&lt;1%</text>
+            <text x="0" y="105">Same brand, same position, twice</text>
+            <rect x="0" y="112" width="0.36" height="18" fill="#E8460A"/>
+            <text x="14" y="126" fill="#ffffff" font-weight="500">&lt;0.1%</text>
+            <text x="0" y="160" fill="rgba(255,255,255,0.4)" font-size="10">Source: SparkToro &amp; Gumshoe.ai, January 2026</text>
+          </g>
+        </svg>
       </div>
 
-      <p style="color:rgba(255,255,255,0.5); font-size:0.875rem; line-height:1.7; margin-top:2rem;">These are probabilistic case studies. The research is real, sourced, and linked. Some is still forming in real time. What we know is directional. What we do not know yet, we say so. Every stat has a source. Every source links out. Use it.</p>
-    </section>
-    <!-- TABLE OF CONTENTS -->
-    <nav class="canon-toc" aria-label="Canon sections">
-      <h2>Sections</h2>
-      <ol>
-        <li><a href="#section-selection">Selection, Not Ranking</a>, why AI positions don't exist</li>
-        <li><a href="#section-citation">Being Cited Is Not Being Chosen</a>, ghost citations, three-layer distinction</li>
-        <li><a href="#section-retrieval">Most Content Never Makes the Answer</a>, the 85% nobody sees</li>
-        <li><a href="#section-volatility">Nothing Stays Put</a>, churn, decay, Reddit, LinkedIn</li>
-        <li><a href="#section-platforms">Each Platform Is Its Own World</a>, ChatGPT, Perplexity, recency</li>
-        <li><a href="#section-brand">The Upstream Signals That Drive Recommendation</a>, brand memory</li>
-        <li><a href="#section-measurement">The Measurement Problem</a>, why most AI tracking data is invalid</li>
-      </ol>
-    </nav>
-
-    <!-- SECTION 1: SELECTION -->
-    <section class="canon-section" id="section-selection">
-      <div class="canon-section-header">
-        <div class="canon-section-label">Section 1 of 7</div>
-        <h2 class="canon-section-title">Selection, Not Ranking</h2>
-        <p class="canon-section-intro">AI does not maintain a ranked list. It evaluates every query fresh, from scratch, probabilistically. What looks like a position is a snapshot of a single output from a system that has already moved on. The brands that consistently appear are not holding positions. They are earning selection, over and over, because they make the model's job easiest.</p>
+      <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <div class="stat-headline">Less than 1-in-100 chance the same brand list appears twice.</div>
+        <p itemprop="text">SparkToro and Gumshoe.ai ran the largest public test of AI recommendation consistency ever conducted. 2,961 prompts. 600 real volunteers. Less than 1-in-100 chance of the same list appearing twice. Less than 1-in-1,000 chance of any brand holding the same position twice.</p>
       </div>
 
-      <!-- NODE 1.1 -->
-      <article class="canon-node" id="node-1-1" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 1.1</div>
-        <h3 class="node-question" itemprop="name">Does ranking higher in AI search mean my brand gets recommended more?</h3>
-
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>Steve's slide shows your brand at number four. The client nods. Someone asks if you can get to number three. A budget gets approved. A plan gets made.</p>
-          <p>The same thing happened in 2008 with Google rankings. And it mostly worked then, because Google was slow enough to stay gamed long enough to matter.</p>
-        </div>
-
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>There is no number four. There is no number three. AI does not hold positions between queries. It re-evaluates from scratch every single time someone asks. What Steve screenshotted was one output of a system that had probably already changed by the time he hit print.</p>
-          <p>This is not instability at the edges. This is all of search. The whole thing re-stacks. Constantly. And the old playbook, be the result, hold the result, defend the result, has almost no application here.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">Less than 1-in-100 chance of the same brand list appearing twice.</div>
-          <p itemprop="text">SparkToro and Gumshoe.ai ran the largest public test of AI recommendation consistency ever conducted. 2,961 prompts. 600 real volunteers. Less than 1-in-100 chance of the same brand list appearing twice. Less than 1-in-1,000 chance of any brand appearing in the same position twice.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>The report Steve brought this morning is a moment. A snapshot of a probabilistic system that has likely already moved. Most GEO companies respond to this by trying harder to be a result. Stage30's answer is different: don't be a result. Be a source. Sources earn selection consistently, across runs, across platforms, across re-evaluations, because the model trusts them.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>We don't optimize position. We engineer selection probability. A brand that shows up in 70% of relevant AI responses with no stable position beats a brand that ranked number one in Steve's orange circle every single time.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "Less than 1 in 100 chance of the same brand list appearing twice. Less than 1 in 1,000 chance of the same brand appearing in the same position twice." SparkToro &amp; Gumshoe.ai, January 2026. AI Brand Recommendation Inconsistency Study. 2,961 prompts, 600 volunteers.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 1.2 -->
-      <article class="canon-node" id="node-1-2" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 1.2</div>
-        <h3 class="node-question" itemprop="name">If my brand is a category leader, am I protected from AI search volatility?</h3>
-
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>You are the category leader. You have been there for years. The instinct is: we are safe. Even if AI is unpredictable, a brand with our history and spend will always be in the answer.</p>
-          <p>That is what market leaders said about Google too. Right up until a well-structured smaller brand started outranking them for their own product terms.</p>
-        </div>
-
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>Size earns you a better probability. Not a guaranteed seat. Even the most dominant brands in a category go missing from AI responses, regularly, with no warning, for no apparent reason.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">Top brands appeared in 55 to 77 percent of runs. Still absent 23 to 45 percent of the time, even at the top.</div>
-          <p itemprop="text">In SparkToro and Gumshoe.ai's study, top brands in their categories appeared reliably, but only 55 to 77 percent of the time. That means category leaders are absent from AI answers 23 to 45 percent of all queries. Nothing changed on their end. The system just moved on without them.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>If your brand touches ten thousand AI-mediated buyer moments every month, a 23 percent absence rate is 2,300 moments where the model picked someone else. Not because your product got worse. Because your content gave the model something harder to work with than your competitor's did.</p>
-          <p>The old game rewarded incumbency. The new one rewards clarity. A challenger brand with cleaner, more structured content will take those moments from you and you will not see it happening until it already happened.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>The model does not remember your history. It selects whoever makes its job easiest right now. That is a solvable problem, if you stop trying to defend a position and start building the architecture that earns selection across every evaluation.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "Top brands appeared in 55 to 77 percent of runs. Still absent 23 to 45 percent of the time with no change in content or authority." SparkToro &amp; Gumshoe.ai, January 2026. AI Brand Recommendation Inconsistency Study.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 1.3 -->
-      <article class="canon-node" id="node-1-3" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 1.3</div>
-        <h3 class="node-question" itemprop="name">How much does AI citation performance vary by platform?</h3>
-
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>You are tracking AI visibility on ChatGPT. The numbers look decent. Someone checks Perplexity. Different story. Someone checks Gemini. Different again. The room gets quiet. Someone suggests maybe the platforms just need time to normalize.</p>
-          <p>They will not normalize. They are different systems with different source logic, different trust hierarchies, and different answers to the same question about your brand.</p>
-        </div>
-
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>Winning on one AI platform tells you almost nothing about your performance on any other. And your buyers are spread across all of them. The old SEO game had one referee: Google. AI search has multiple referees with different rule books.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">615 times more variation in citation rates for the same brand across different AI platforms.</div>
-          <p itemprop="text">According to Superlines' 2026 AI Search Statistics report, researchers found 615 times more variation in citation rates for the same brand across different AI platforms than within any single platform. Same brand. Different platforms. Completely different story.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>That number on your ChatGPT dashboard is not your AI visibility score. It is your ChatGPT score, one slice of a fragmented system with no consistent logic across platforms. Your buyers are spread across all of them. Your measurement probably is not.</p>
-          <p>Even if you figure out the trick for one platform, you have solved maybe 20 percent of the problem. The old hiding places do not exist here. There is no single algorithm to exploit.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>The only signal that travels reliably across all platforms is structure. Not platform-specific tricks. Clean, well-organized content that any AI system can immediately extract and trust. That is what we build. That is the only answer that works across the whole board.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "615x variance in citation rates for the same brand across different AI platforms." Superlines, March 2026. AI Search Statistics 2026: 60+ Data Points.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 1.4 -->
-      <article class="canon-node" id="node-1-4" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 1.4</div>
-        <h3 class="node-question" itemprop="name">If I optimize for ChatGPT, does that carry over to Perplexity?</h3>
-
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>You have put serious work into ChatGPT optimization. Structured content, clean pages, good schema. Someone asks whether that work transfers to Perplexity. You assume it mostly does.</p>
-        </div>
-
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>It mostly does not. The platforms do not share source logic. They do not pull from the same pool. The idea that you can pick one platform and call it done is a remnant of the single-algorithm era. There was one Google. That era produced an entire industry of people who learned to speak one language. AI search requires fluency across several, and the only common dialect is structure.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">Only 11 percent of domains cited by ChatGPT are also cited by Perplexity.</div>
-          <p itemprop="text">Cross-platform analysis from Ahrefs and Profound found only 11 percent of domains cited by ChatGPT are also cited by Perplexity. 89 percent of cited domains are platform-exclusive. For every 10 sources ChatGPT trusts enough to cite, only one shows up in Perplexity's answers.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>You can have a solid ChatGPT strategy and near-zero Perplexity presence and not know it, because you are only looking at one dashboard. Your buyers are not all using the same platform. Your visibility strategy probably should not pretend they are.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>We build for the underlying architecture all platforms evaluate the same way: clarity, organization, extractability. Not for any single platform's quirks. Because quirks change and architecture holds.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "Only 11% of domains are cited by both ChatGPT and Perplexity." Ahrefs and Profound cross-platform dataset analysis, August 2024 to June 2025.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <div class="pullquote">There is no rank to hold.<br>There is only selection<br>to engineer.</div>
-    </section>
-    <!-- SECTION 2: CITATION vs CHOSEN -->
-    <section class="canon-section" id="section-citation">
-      <div class="canon-section-header">
-        <div class="canon-section-label">Section 2 of 7</div>
-        <h2 class="canon-section-title">Being Cited Is Not the Same as Being Chosen</h2>
-        <p class="canon-section-intro">There is a difference between your content being used as source material and your brand being named in the answer. Most dashboards do not track that gap. Most brands do not know it exists. The gap is where the ghost citation problem lives, and it is where pipeline stalls while metrics look healthy.</p>
+      <div class="node-stage30">
+        <div class="node-stage30-label">Stage30</div>
+        <p>We don't chase position. We engineer being chosen. A brand that shows up in 70% of relevant AI responses with no stable position beats a brand that ranked number one in Steve's orange circle every single time.</p>
       </div>
 
-      <!-- NODE 2.1 -->
-      <article class="canon-node" id="node-2-1" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 2.1</div>
-        <h3 class="node-question" itemprop="name">My AI tracking dashboard shows citations are up. Why is pipeline flat?</h3>
+      <div class="node-source">
+        <strong>Source:</strong> "Less than 1 in 100 chance of the same brand list appearing twice. Less than 1 in 1,000 chance of the same brand appearing in the same position twice." SparkToro &amp; Gumshoe.ai, January 2026. AI Brand Recommendation Inconsistency Study. 2,961 prompts, 600 volunteers.<br>
+        <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
+      </div>
+    </article>
 
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>The AI dashboard looks great. Citations are climbing. You share it in the all-hands. Leadership is pleased. Someone asks why pipeline is not moving. Nobody makes the connection, because the two metrics are in different reports owned by different teams.</p>
-          <p>This is what the old game produced at scale too: impressions without outcomes, reach without resonance, visibility without trust. We optimized for numbers that felt good and ignored whether the person on the other end was actually helped.</p>
-        </div>
-
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>Your content can be cited by AI, pulled as a source, used to build the answer, without your brand ever appearing in what the user reads. The model used your work. Your brand got nothing.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">100 citations in 25 days. Zero brand mentions.</div>
-          <p itemprop="text">Seer Interactive analyzed 541,213 LLM responses across 20 brands, 6 AI platforms, and 5 stages of the buyer journey. In one documented case, a client's blog post was cited over 100 times in 25 days with zero brand mentions across all 100 responses. The content fed the model. The brand fed nobody. Researchers call this a ghost citation.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>Ghost citations are the AI era's version of the impression. A number that looks like performance and measures something else entirely. A brand optimizing for citation count while its recommendation rate is flat is running the same play that drove CMOs crazy for twenty years: vanity metrics dressed as strategy.</p>
-          <p>The difference now is the system is honest about it. The model does not pretend citations equal outcomes. The gap is right there in the data, if you know where to look.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>We build content where the brand is part of the answer, not just the source list. Not as a trick. As a structural commitment to being the entity the model is actually describing, not just the document it pulled from.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "In one case, a client's blog post was cited over 100 times in 25 days with zero brand mentions. Every citation was a ghost citation." Seer Interactive, March 2026. "LLM Ghost Citations: Why Your Content Is Working and Your Brand Isn't." 541,213 LLM responses analyzed.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 2.2 -->
-      <article class="canon-node" id="node-2-2" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 2.2</div>
-        <h3 class="node-question" itemprop="name">What is the difference between an AI citation, a mention, and a recommendation?</h3>
-
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>The team is tracking AI citations as a single number. It goes up, things are working. It goes down, fix something. Nobody has paused to ask whether a citation, a mention, and a recommendation are actually the same thing with the same value. They are not. And conflating them is how you spend a year optimizing the wrong outcome.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">Three distinct outcomes. Three different mechanisms. Most tools only measure one.</div>
-          <p itemprop="text">Research by Seer Interactive and Omniscient Digital identified three distinct AI outcomes. Citations, your URL appearing as a source, driven by content structure and retrievability. Mentions, your brand named in the response, driven by how well the AI has encoded your brand in memory. Recommendations, the AI actively suggesting your brand as the answer, driven almost entirely by how consistently your brand appears in the AI's training history.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>The distinction matters because the fix is different for each. Citations are a structural problem solved with better content architecture. Recommendations are a brand memory problem solved with consistent presence, earned media, and real-world brand signals. If your citations are up and recommendations are flat, you do not have a content problem. You have a brand problem. No amount of schema markup is going to fix a brand problem.</p>
-          <p>The old game blurred these lines on purpose. More impressions meant more budget. The new system makes the blur expensive.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>Ghost citations are a warning sign, not a win. We build for all three layers because you cannot reach recommendation without the others working first, and each layer requires a different structural input.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "Citations, mentions, and recommendations are three distinct outcomes driven by different mechanisms." Seer Interactive, March 2026 / Omniscient Digital / Peec AI, January 2026. 23,387 branded citations analyzed.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 2.3 -->
-      <article class="canon-node" id="node-2-3" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 2.3</div>
-        <h3 class="node-question" itemprop="name">Where do AI citations about my brand actually come from?</h3>
-
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>The content team is heads-down on the website. Better pages, fresher posts, cleaner copy. The assumption, reasonable on its face, is that a better website means better AI presence.</p>
-          <p>The old game taught us to own the narrative. Write the story, publish it, optimize it, rank it. The problem with that model was always that the consumer knew it. They went to Reddit. They asked friends. They looked for sources that had no reason to lie. The AI learned from watching consumers do exactly that.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">48 percent earned media. 30 percent commercial content. 23 percent owned pages.</div>
-          <p itemprop="text">Omniscient Digital analyzed 23,387 citations across branded AI queries. Of those citations: 48 percent came from earned media, third-party coverage, reviews, and press. 30 percent from commercial brand content. 23 percent from owned brand pages. Nearly half of what AI says about your brand originated somewhere you did not write.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>Your website is one quarter of your AI presence. The other three quarters lives in sources you do not own and may not be managing. Optimizing your homepage while ignoring that ecosystem is optimizing the part of the problem you can see while the larger part quietly shapes your brand's reputation in the one system that increasingly matters.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>We map and structure the whole signal ecosystem. Because that is where the citations actually live, and because the only path to a consistent AI presence is making sure everything the model reads about you is saying the same true thing.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "48% earned media, 30% commercial brand content, 23% owned brand content." Omniscient Digital / Peec AI, January 2026. 23,387 branded AI citations analyzed.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 2.4 -->
-      <article class="canon-node" id="node-2-4" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 2.4</div>
-        <h3 class="node-question" itemprop="name">Is my website or third-party coverage more important for AI visibility?</h3>
-
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>What other people say about you is far more influential on AI responses than what you say about yourself. The AI was trained on the actual internet, including all the places consumers went to escape the pushed story. It learned what independent evidence looks like. And it trusts it accordingly.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">Brands are 6.5 times more likely to be cited from third-party pages than from their own domains.</div>
-          <p itemprop="text">AirOps found that brands are 6.5 times more likely to be cited by AI from third-party pages than from their own domains. The AI treats your homepage the way a skeptical buyer treats a company brochure: useful, but probably not the whole truth. Third-party sources are the references it actually trusts because they have no reason to spin things in your favor.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>Most of your AI authority lives off your domain, in sources you do not control. Ignoring that layer while perfecting your owned content is leaving the majority of your AI authority unmanaged.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>We treat the owned pages and the ecosystem around them as one connected architecture. Because in AI search, they already are. Your authority does not live where you think it does.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "Brands are 6.5x more likely to be cited from third-party pages than from owned domains." AirOps, March 2026. "The Influence of Retrieval, Fan-out, and Google SERPs on ChatGPT Citations."<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 2.5 -->
-      <article class="canon-node" id="node-2-5" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 2.5</div>
-        <h3 class="node-question" itemprop="name">How much does earned media actually affect AI citation rates?</h3>
-
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>A press placement lands. The PR team puts it in the clips folder. The marketing team shares it on LinkedIn. Everyone moves on. Nobody asks what happened to AI citations that month.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">Earned media distribution increases AI citations by up to 325 percent.</div>
-          <p itemprop="text">Stacker's research found that earned media distribution increases AI citations by up to 325 percent. Every third-party source that names your brand and points back to your work is adding to the pool the AI draws from. The old game treated PR as awareness, soft metrics, long attribution windows, hard to prove. The new system makes it measurable.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>A 325 percent citation lift from earned media is not a PR metric. It is a structural outcome. The press clip that ran last month is either in the model's citation pool or it is not. Structure it right and it is.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>We treat earned media as a structural decision: where you appear, how those placements are written, what they connect back to. Because in AI search, every earned mention is a signal the model is reading and weighting.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "Earned media distribution increases AI citations by up to 325%." Stacker, December 2025. Earned Media Distribution and AI Citation Lift.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-    </section>
-    <!-- SECTION 3: RETRIEVAL -->
-    <section class="canon-section" id="section-retrieval">
-      <div class="canon-section-header">
-        <div class="canon-section-label">Section 3 of 7</div>
-        <h2 class="canon-section-title">Most Content Never Makes It Into the Answer</h2>
-        <p class="canon-section-intro">There is a gap between "AI can find my content" and "AI uses my content" that most brands do not know exists. Being retrievable gets you into consideration. What happens next is a different evaluation entirely. Most content fails it. The brands that consistently appear in AI answers are not the ones with the most content. They are the ones with the most extractable content.</p>
+    <article class="canon-node" id="node-3-1" itemscope itemtype="https://schema.org/Question">
+      <div class="node-label">Finding 02</div>
+      <h2 class="node-question" itemprop="name">If ChatGPT retrieves my content, will users see my brand?</h2>
+      <div class="node-body">
+        <p>The technical audit is clean. Indexed. Crawlable. The team assumes findable means used. AI systems retrieve far more than they ever surface. Being findable gets you in the room. What happens next is a different evaluation, and most content does not pass it.</p>
       </div>
 
-      <!-- NODE 3.1 -->
-      <article class="canon-node" id="node-3-1" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 3.1</div>
-        <h3 class="node-question" itemprop="name">If ChatGPT retrieves my content, does that mean users will see my brand?</h3>
-
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>The technical audit says the site is clean. Indexed. Crawlable. The AI can find the content. The team assumes that means the AI is using the content.</p>
-          <p>This was always true of consumers too. They found the page. They did not read it. They scanned for five seconds and left. We optimized for the arrival and never fixed the experience.</p>
-        </div>
-
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>AI systems retrieve far more than they ever surface. Most of what they pull in never reaches the user. Being findable gets you into the room. What happens next is a different evaluation, and most content does not pass it.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">85 percent of content ChatGPT retrieved was never shown to the user.</div>
-          <p itemprop="text">AirOps analyzed 548,534 pages retrieved by ChatGPT across 15,000 prompts. Only 15 percent appeared in the final response shown to users. 85 percent of what ChatGPT fetched was retrieved, processed, and set aside. Eight and a half out of every ten pages, gone. Not because they were wrong. Because something else was easier to use.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>There is a layer between "indexed" and "visible" that most brands do not know exists. You can pass every technical check, every crawlability audit, and still have near-zero presence in the answers users actually read. The old game optimized for arrival. The new one optimizes for use. Those require completely different approaches.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>Getting retrieved is not the goal. Getting used is. And the difference is entirely structural: how immediately and clearly your content gives the AI the answer it needs, without making it read the whole thing to find it.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "AirOps analyzed 548,534 pages retrieved by ChatGPT across 15,000 prompts. Only 15% of those pages appeared in the final response." AirOps, March 2026. "The Influence of Retrieval, Fan-out, and Google SERPs on ChatGPT Citations."<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 3.2 -->
-      <article class="canon-node" id="node-3-2" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 3.2</div>
-        <h3 class="node-question" itemprop="name">Why doesn't standard keyword tracking capture AI search performance?</h3>
-
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>Before AI responds to a question, it often asks itself several more. Follow-up searches, invisible to the user and to most tracking tools, that shape what ends up in the final answer. Your keyword list sees the surface. Everything underneath it is invisible.</p>
-          <p>Consumers were always asking questions brands were not answering. They went to Reddit because Reddit answered them. The AI has the same instinct: it goes wherever the real answer lives.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">89.6 percent of ChatGPT responses involve invisible follow-up searches before answering.</div>
-          <p itemprop="text">AirOps found that 89.6 percent of ChatGPT responses involve fan-out searches, follow-up queries the model runs automatically in the background before producing its answer. Standard keyword tracking tools miss all of them. Nine in ten responses. The AI is doing invisible research before it answers.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>The brands that consistently show up in AI responses are not just answering what people typed. They are answering the hidden questions the AI ran before it responded. If your content only covers the visible query, you are addressing about 10 percent of the actual evaluation happening behind the answer.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>We map the full question tree: what someone asks, what they actually mean underneath it, what they are afraid of. Because that is the evaluation the AI is running, just faster and invisibly.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "89.6% of ChatGPT responses involve fan-out searches, follow-up queries the model runs invisibly before answering." AirOps, March 2026.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 3.3 -->
-      <article class="canon-node" id="node-3-3" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 3.3</div>
-        <h3 class="node-question" itemprop="name">Does adding structured data and FAQ markup actually increase AI citations?</h3>
-
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>Structured content is one of the most direct inputs to AI citation rates. Not because it is clever. Because it removes work the AI would otherwise have to do. The old game had us writing for robots, stuffing keywords into pages humans did not enjoy reading. The new game asks us to write for understanding, which, it turns out, humans also prefer.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">Sites implementing structured data and FAQ blocks saw a 44 percent increase in AI citation rates.</div>
-          <p itemprop="text">BrightEdge research from 2025 to 2026 found that sites implementing structured data and FAQ blocks saw a 44 percent increase in AI citation rates. Two pieces of content covering the same topic with the same expertise. One organized so the AI finds the answer immediately. One requiring the AI to read through to find it. The first gets cited 44 percent more often.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>Over time, across a whole content library, that gap becomes the difference between being the answer and being the research nobody shows anyone.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>Structure is not decoration. It is the admission requirement. Stage30 is the system for building it consistently, across every surface, without having to re-learn it for every new piece.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "Sites implementing structured data and FAQ blocks saw a 44% increase in AI citation rates." BrightEdge, 2025 to 2026.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 3.4 -->
-      <article class="canon-node" id="node-3-4" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 3.4</div>
-        <h3 class="node-question" itemprop="name">Why is my content being retrieved but not used in AI responses?</h3>
-
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>The content is ranking. Getting retrieved. The team is confident. But AI citations are flat and nobody understands why. Something is happening between found and used.</p>
-        </div>
-
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>Most content was written for humans who scan. They would find the point eventually, in the third paragraph or the pull quote or the bolded sentence mid-page. The AI does not scan. It evaluates. And if the answer is not clearly, immediately present, it moves to the next source. The old format does not survive the new evaluation.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">68.7 percent of pages retrieved by ChatGPT lacked the structural signals needed to be used.</div>
-          <p itemprop="text">AirOps' 2026 State of AI Search found that 68.7 percent of pages retrieved by ChatGPT lacked the structural signals needed to actually be used in responses: clear headings, front-loaded answers, definitive statements. More than two-thirds of everything AI retrieves gets set aside at the structure check.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>Your content is probably in that majority. Most content is. It ranks. It gets retrieved. And then it quietly fails a structural test that nobody told you existed. The gap between retrievable and used is where most brands are losing citations they should be earning.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>We close the gap between retrieved and used. Every piece leads with the answer. The AI should not have to read the whole thing to find what it needs, and with Stage30 architecture, it does not.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "68.7% of pages retrieved by ChatGPT lacked the structural signals needed for content to be used in responses." AirOps, 2026 State of AI Search.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 3.5 -->
-      <article class="canon-node" id="node-3-5" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 3.5</div>
-        <h3 class="node-question" itemprop="name">How much does content structure actually matter for AI search visibility?</h3>
-
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>Structure is a primary input to AI visibility, not a footnote. This is arguably the most subversive finding in all the AI search research because it means a smaller brand that organizes its content well can achieve AI visibility that rivals a larger brand that does not. The old game rewarded scale: more budget, more content, more backlinks. The new game rewards clarity. And clarity is not a budget problem. It is a discipline problem.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">Structured content increases AI visibility by up to 40 percent.</div>
-          <p itemprop="text">Princeton and Georgia Tech researchers studied this directly, publishing their findings at SIGKDD 2024. Structured content increases AI visibility by up to 40 percent. Not from more content. Not from more authority. From how you organize what you already have.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>Princeton and Georgia Tech mapped the mechanism. We build the architecture. Consistently, across every piece, for every client, because the 40 percent lift is available to anyone willing to actually do it.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "Structured content increases AI visibility by up to 40%." Aggarwal et al., 2024. Princeton University / Georgia Tech. "Generative Engine Optimization." Published SIGKDD 2024.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <div class="pullquote">Getting retrieved<br>is not the goal.<br>Getting used is.</div>
-    </section>
-    <!-- SECTION 4: VOLATILITY -->
-    <section class="canon-section" id="section-volatility">
-      <div class="canon-section-header">
-        <div class="canon-section-label">Section 4 of 7</div>
-        <h2 class="canon-section-title">Nothing Stays Put</h2>
-        <p class="canon-section-intro">AI results do not hold. They churn, reset, and re-evaluate constantly. The brands that maintain consistent AI visibility are not holding positions. They are maintaining the structural architecture that keeps making selection likely across every re-evaluation. Anything else is a tactic that wins one run and loses the system.</p>
+      <div class="node-chart" role="img" aria-label="Donut chart showing 85 percent of pages retrieved by ChatGPT never reach the user">
+        <svg viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg">
+          <title>Retrieved versus surfaced content in ChatGPT</title>
+          <desc>Of 548,534 pages retrieved by ChatGPT, only 15 percent appeared in the final response shown to users.</desc>
+          <text x="0" y="15" fill="#E8460A" font-family="Barlow Condensed, sans-serif" font-size="11" font-weight="700" letter-spacing="2">RETRIEVED VS. SURFACED</text>
+          <g transform="translate(100, 100)">
+            <circle r="50" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="22"/>
+            <circle r="50" fill="none" stroke="#E8460A" stroke-width="22" stroke-dasharray="47.1 314" transform="rotate(-90)"/>
+            <text x="0" y="-2" text-anchor="middle" fill="#E8460A" font-family="Barlow Condensed, sans-serif" font-size="26" font-weight="800">15%</text>
+            <text x="0" y="14" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Barlow, sans-serif" font-size="9">SHOWN TO USER</text>
+          </g>
+          <text x="100" y="170" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="Barlow, sans-serif" font-size="10">Source: AirOps, 548,534 pages, 15,000 prompts</text>
+        </svg>
       </div>
 
-      <!-- NODE 4.1 -->
-      <article class="canon-node" id="node-4-1" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 4.1</div>
-        <h3 class="node-question" itemprop="name">How stable are AI Overview results from one week to the next?</h3>
-
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>A strong AI Overview citation lands. The team celebrates. Someone is now assigned to monitor it. The strategy is hold the position. The old game had a version of this that mostly worked. You earned a top Google ranking, you maintained it, it held for months. The reflexes trained over twenty years are now being applied to a system those reflexes do not fit.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">AI Overview content changes 70 percent of the time when the same query is re-run.</div>
-          <p itemprop="text">Ahrefs tested this directly, running identical queries and comparing results. AI Overview content changes 70 percent of the time when the same query is re-run. Seven in ten. Same question. Different answer.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>The morning report showing your brand in a strong position is a moment. A snapshot of a system that has probably already moved. Tactics that earn you a citation today have roughly even odds of still working next month. You can win the run and lose the system.</p>
-          <p>Most GEO companies respond to this by trying harder to be a result. Better optimization, more coverage, faster iteration. Stage30's answer is different: stop trying to be a result. Become a source.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>We build the architecture that makes selection likely across every run. Not the tactic that wins one.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "AI Overview content changes 70% of the time for the same query." Ahrefs, November to December 2025.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 4.2 -->
-      <article class="canon-node" id="node-4-2" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 4.2</div>
-        <h3 class="node-question" itemprop="name">How long does an AI citation typically last once a brand earns it?</h3>
-
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>The organic SEO logic is being applied to AI: build authority, earn citations, let them compound. The playbook worked for twenty years. The assumption is it transfers.</p>
-        </div>
-
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>AI citations do not stack the way organic rankings do. The citation pool reshuffles constantly. The compounding asset model does not hold in a system with this level of churn. The organic SEO analogy breaks down. Brands that maintain consistent AI visibility are not holding positions. They are continuously earning selection in a system that re-evaluates constantly.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">40 to 60 percent of cited domains change month over month.</div>
-          <p itemprop="text">Profound tracked 680 million AI citations over nine months. Between 40 and 60 percent of cited domains changed month over month. Over a six-month window, the majority of citation slots had completely turned over. Half the citation landscape. Gone and replaced. Every six months.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>Are you building something that earns selection every time, or something that earned it once?</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>Durable AI presence comes from structural architecture, the kind that makes selection likely across every re-evaluation. Not the kind that earns one good result and waits.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "40 to 60% of cited domains change month over month. Over six months, the majority of citation slots turn over completely." Profound, August 2024 to June 2025. 680 million citations tracked.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 4.3 -->
-      <article class="canon-node" id="node-4-3" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 4.3</div>
-        <h3 class="node-question" itemprop="name">Does publishing new content increase AI citations? What happens to old content?</h3>
-
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>AI applies a freshness filter that is sharper than most content strategies account for. The old game did not punish you for this. Google's algorithm rewarded age in many categories. Old pages with authority held their rankings for years. The new system has different instincts. It learned from a world that moves fast, and it weights currency accordingly.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">Stale content sees citation rates drop 3 times compared to recently refreshed content.</div>
-          <p itemprop="text">GenOptima's monitoring data shows content not updated in 12 or more months sees citation rates drop 3 times compared to recently refreshed content. New content can begin generating citations within days of publication. Three times. Not slow erosion. A cliff.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>The comprehensive guide you published in 2022 and never touched again is running at a third of its potential citation rate right now. Multiply that across an entire content library and you are looking at a significant, invisible loss, happening every month, with no alarm going off.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>Freshness is structural. We build content maintenance into the architecture, active updates, correction signals, temporal anchors, so what you published keeps signaling current, not just indexed.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "Content not updated in 12+ months sees citation rates drop 3x vs. recently refreshed content." GenOptima, March 2026. AI Brand Visibility Report.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 4.4 -->
-      <article class="canon-node" id="node-4-4" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 4.4</div>
-        <h3 class="node-question" itemprop="name">Why does Reddit dominate AI citation data?</h3>
-
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>Reddit keeps showing up in AI citation data. The team either ignores it or plans to route around it. The assumption: algorithm quirk, will normalize.</p>
-          <p>Consider the tagline "Built for the road ahead." Every car company has some version of it. To a consumer, it is noise. To an AI model, it is entropy. The model tries to extract meaning. What road? Ahead of what? It finds two hundred brands saying the same thing, none of them saying anything. The probability distributes. The model might give you someone else's answer. Might wobble. Might hallucinate a meaning that is not there. That is the structural cost of language designed to sound good rather than mean something. One and done.</p>
-          <p>Reddit does not do that. Reddit says: "I bought the product, here is what happened, here is what I wish I had known." The AI trusts it because it can find the meaning.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">Reddit citation share grew 73 percent across commercial categories in one quarter.</div>
-          <p itemprop="text">Tinuiti's Q1 2026 AI Citation Trends Report tracked high-intent commercial queries across nine verticals and seven platforms. Reddit citation share grew at least 73 percent across commercial categories between October 2025 and January 2026. In some categories, ChatGPT cited Reddit in nearly 60 percent of responses.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>The AI learned the same lesson consumers learned about brand content twenty years ago. It goes where the honest answer lives.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>Reddit is proof of concept for the entire methodology. Real question. Direct answer. No marketing gloss. We build that, except the brand owns it. Same structural honesty, brand-controlled, accurate, and designed to be the source the model trusts.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "Reddit citation share grew at least 73% across commercial categories between October 2025 and January 2026." Tinuiti, Q1 2026. AI Citation Trends Report: 9 Verticals, 7 Platforms.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-
-      <!-- NODE 4.5 -->
-      <article class="canon-node" id="node-4-5" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 4.5</div>
-        <h3 class="node-question" itemprop="name">Has LinkedIn become a meaningful AI citation source for B2B brands?</h3>
-
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>LinkedIn is in the social budget. Content goes there for reach and employer brand. It is not part of the AI visibility conversation. Nobody flagged it.</p>
-        </div>
-
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">LinkedIn moved from outside the top 20 cited sources to approximately number three for professional queries in three months.</div>
-          <p itemprop="text">Research from Profound and Semrush found LinkedIn moved from outside the top 20 cited sources to approximately the number three most cited domain for professional queries between November 2025 and February 2026. It now appears in 16 percent of LLM answers. Outside the top 20 to number three in three months.</p>
-        </div>
-
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>A surface that was not part of your AI strategy six months ago is now one of the most influential citation nodes for professional queries. The shift happened while most brands were looking at their ChatGPT dashboards. Your company page, your founders' profiles, the thought leadership you publish there, the model is reading all of it and weighting it.</p>
-        </div>
-
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>LinkedIn is a required node in any B2B brand's AI architecture now. We treat it that way: structured, consistent, and connected back to everything else, because disconnected signals in a fragmented system do not compound. Connected ones do.</p>
-        </div>
-
-        <div class="node-source">
-          <strong>Full source:</strong> "LinkedIn surged from outside the top 20 to approximately #3 for professional queries between November 2025 and February 2026. It now appears in 16% of LLM answers." Profound, November 2025 to February 2026 / Semrush, January to February 2026. 89,000 URLs analyzed.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-    </section>
-    <!-- SECTION 5: PLATFORMS -->
-    <section class="canon-section" id="section-platforms">
-      <div class="canon-section-header">
-        <div class="canon-section-label">Section 5 of 7</div>
-        <h2 class="canon-section-title">Each Platform Is Its Own World</h2>
-        <p class="canon-section-intro">ChatGPT and Perplexity trust almost entirely different sources. Optimizing for one does almost nothing for the other. Understanding what each platform actually pulls from changes what you build and where you build it.</p>
+      <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <div class="stat-headline">85% of what ChatGPT retrieved was never shown to the user.</div>
+        <p itemprop="text">AirOps analyzed 548,534 pages retrieved by ChatGPT across 15,000 prompts. Only 15 percent appeared in the final response. The other 85 percent was fetched, processed, and set aside. Not because it was wrong. Because something else was easier to use.</p>
       </div>
 
-      <!-- NODE 5.1 -->
-      <article class="canon-node" id="node-5-1" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 5.1</div>
-        <h3 class="node-question" itemprop="name">What sources does ChatGPT trust most when answering questions?</h3>
+      <div class="node-stage30">
+        <div class="node-stage30-label">Stage30</div>
+        <p>Getting retrieved is not the goal. Getting used is. We build the kind of content the model picks up first.</p>
+      </div>
 
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>ChatGPT's citation behavior is heavily concentrated in a small number of trusted sources, and one source holds almost half the weight of the platform's entire top 10.</p>
-        </div>
+      <div class="node-source">
+        <strong>Source:</strong> "AirOps analyzed 548,534 pages retrieved by ChatGPT across 15,000 prompts. Only 15% of those pages appeared in the final response." AirOps, March 2026. "The Influence of Retrieval, Fan-out, and Google SERPs on ChatGPT Citations."<br>
+        <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
+      </div>
+    </article>
 
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">Wikipedia accounts for 7.8 percent of all ChatGPT citations, holding 47.9 percent of top-10 source share.</div>
-          <p itemprop="text">Profound's analysis of 680 million citations found Wikipedia accounts for 7.8 percent of all ChatGPT citations and holds 47.9 percent of relative share among ChatGPT's top 10 citation sources. Nearly half the weight of ChatGPT's most trusted source tier sits in one place: Wikipedia.</p>
-        </div>
+    <div class="pullquote">There is no rank to hold.<br>There is only selection<br>to engineer.</div>
 
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>For ChatGPT, a Wikipedia entity entry is not a vanity play. It is the single highest-leverage citation node on the platform. If your brand does not have one, or if what is there is thin or disconnected from your other web presence, you are missing nearly half the trust architecture of the most-used AI platform.</p>
-        </div>
+    <article class="canon-node" id="node-2-1" itemscope itemtype="https://schema.org/Question">
+      <div class="node-label">Finding 03</div>
+      <h2 class="node-question" itemprop="name">My AI dashboard shows citations are up. Why is pipeline flat?</h2>
+      <div class="node-body">
+        <p>The dashboard looks great. Citations climbing. Leadership pleased. Pipeline isn't moving and nobody connects the two reports. Your content can be cited, pulled, used to build the answer, without your brand ever appearing in what the user reads. The model used your work. Your brand got nothing.</p>
+      </div>
 
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>Entity presence, including Wikipedia, is part of the structural foundation, not an optional extra. We connect your Wikipedia entry to your website, your schema, and your other citation sources so ChatGPT has a complete, consistent picture.</p>
-        </div>
+      <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <div class="stat-headline">100 citations in 25 days. Zero brand mentions.</div>
+        <p itemprop="text">Seer Interactive analyzed 541,213 LLM responses across 20 brands and 6 platforms. In one documented case, a client blog post was cited over 100 times in 25 days with zero brand mentions across all 100 responses. The content fed the model. The brand fed nobody. Researchers call this a ghost citation.</p>
+      </div>
 
-        <div class="node-source">
-          <strong>Full source:</strong> "Wikipedia accounts for 7.8% of all ChatGPT citations and holds 47.9% of relative share among its top 10 citation sources." Profound, August 2024 to June 2025. 680 million citations analyzed.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
+      <div class="node-stage30">
+        <div class="node-stage30-label">Stage30</div>
+        <p>We build content where the brand is part of the answer, not just the source list.</p>
+      </div>
 
-      <!-- NODE 5.2 -->
-      <article class="canon-node" id="node-5-2" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 5.2</div>
-        <h3 class="node-question" itemprop="name">What sources does Perplexity weight most heavily?</h3>
+      <div class="node-source">
+        <strong>Source:</strong> "In one case, a client's blog post was cited over 100 times in 25 days with zero brand mentions. Every citation was a ghost citation." Seer Interactive, March 2026. "LLM Ghost Citations: Why Your Content Is Working and Your Brand Isn't." 541,213 LLM responses analyzed.<br>
+        <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
+      </div>
+    </article>
 
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>Perplexity's citation logic is almost the mirror image of ChatGPT's. Where ChatGPT trusts encyclopedic reference sources, Perplexity trusts community and conversation, specifically Reddit. The same kind of concentrated dominance Wikipedia holds on ChatGPT, Reddit holds on Perplexity.</p>
-        </div>
+    <article class="canon-node" id="node-2-3" itemscope itemtype="https://schema.org/Question">
+      <div class="node-label">Finding 04</div>
+      <h2 class="node-question" itemprop="name">Where do AI citations about my brand actually come from?</h2>
+      <div class="node-body">
+        <p>The content team is heads-down on the website. Better pages, fresher posts. The assumption: a better website means better AI presence. The old game taught us to own the narrative. Consumers stopped believing the narrative twenty years ago and went to Reddit. The AI learned from watching them do exactly that.</p>
+      </div>
 
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">Reddit is Perplexity's leading citation source at 6.6 percent of total citations, with 46.7 percent of top-10 share.</div>
-          <p itemprop="text">Profound's 680-million-citation dataset found Reddit is Perplexity's leading citation source at 6.6 percent of total citations, with 46.7 percent relative share among its top 10 sources. A buyer using Perplexity is getting answers heavily influenced by what Reddit and community sources say about your brand. A buyer using ChatGPT is getting answers shaped by Wikipedia and reference sources.</p>
-        </div>
+      <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <div class="stat-headline">48% earned. 30% commercial. 23% owned.</div>
+        <p itemprop="text">Omniscient Digital analyzed 23,387 citations across branded AI queries. 48 percent came from earned media, third-party coverage, reviews, and press. 30 percent from commercial brand content. 23 percent from owned brand pages. Nearly half of what AI says about your brand started somewhere you did not write.</p>
+      </div>
 
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>Platform-specific presence matters. We build for the sources each platform actually trusts, not just the ones that feel most brand-appropriate. For Perplexity, that means managing your presence in community spaces the same way you manage your website.</p>
-        </div>
+      <div class="node-stage30">
+        <div class="node-stage30-label">Stage30</div>
+        <p>Your website is one quarter of your AI presence. We work the other three quarters too.</p>
+      </div>
 
-        <div class="node-source">
-          <strong>Full source:</strong> "Reddit is Perplexity's leading citation source at 6.6% of total citations, with 46.7% of top-10 share." Profound, August 2024 to June 2025. 680 million citations.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
+      <div class="node-source">
+        <strong>Source:</strong> "48% earned media, 30% commercial brand content, 23% owned brand content." Omniscient Digital / Peec AI, January 2026. 23,387 branded AI citations analyzed.<br>
+        <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
+      </div>
+    </article>
 
-      <!-- NODE 5.3 -->
-      <article class="canon-node" id="node-5-3" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 5.3</div>
-        <h3 class="node-question" itemprop="name">How much does content age affect AI citation rates?</h3>
+    <div class="pullquote">Half the citation<br>landscape turns over<br>every six months.</div>
 
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>AI applies a recency filter that is more decisive than most content strategies are built to handle. Older content does not just rank lower. It mostly does not get cited at all. Not the most authoritative content. Not the best-written content. The most recent content.</p>
-        </div>
+    <article class="canon-node" id="node-4-2" itemscope itemtype="https://schema.org/Question">
+      <div class="node-label">Finding 05</div>
+      <h2 class="node-question" itemprop="name">How long does an AI citation last once a brand earns it?</h2>
+      <div class="node-body">
+        <p>The organic SEO logic is being applied to AI: build authority, earn citations, let them compound. The playbook worked for twenty years. The assumption is it transfers. AI citations do not stack the way organic rankings do. The pool reshuffles constantly.</p>
+      </div>
 
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">85 percent of AI Overview citations come from content published in the last two years.</div>
-          <p itemprop="text">Seer Interactive's January 2026 research found that 85 percent of AI Overview citations come from content published in the last two years. A content library more than two years old without active refresh is operating outside the citation window for 85 percent of AI Overview responses.</p>
-        </div>
+      <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <div class="stat-headline">40 to 60% of cited domains change month over month.</div>
+        <p itemprop="text">Profound tracked 680 million AI citations over nine months. Between 40 and 60 percent of cited domains changed month over month. Over a six-month window, the majority of citation slots had completely turned over. Half the landscape, gone and replaced, every six months.</p>
+      </div>
 
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>Recency is structural. We build update cycles into the architecture so your content keeps signaling current, not just indexed.</p>
-        </div>
+      <div class="node-stage30">
+        <div class="node-stage30-label">Stage30</div>
+        <p>Are you building something that earns selection every time, or something that earned it once? We build for the first one.</p>
+      </div>
 
-        <div class="node-source">
-          <strong>Full source:</strong> "85% of AI Overview citations come from content published in the last two years." Seer Interactive, January 2026.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
+      <div class="node-source">
+        <strong>Source:</strong> "40 to 60% of cited domains change month over month. Over six months, the majority of citation slots turn over completely." Profound, August 2024 to June 2025. 680 million citations tracked.<br>
+        <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
+      </div>
+    </article>
 
-      <!-- NODE 5.4 -->
-      <article class="canon-node" id="node-5-4" itemscope itemtype="https://schema.org/Question">
-        <div class="node-label">Node 5.4</div>
-        <h3 class="node-question" itemprop="name">Can I trust that AI citations about my brand are accurate?</h3>
+    <article class="canon-node" id="node-1-3" itemscope itemtype="https://schema.org/Question">
+      <div class="node-label">Finding 06</div>
+      <h2 class="node-question" itemprop="name">How much does AI citation performance vary by platform?</h2>
+      <div class="node-body">
+        <p>You are tracking AI visibility on ChatGPT. Numbers look decent. Someone checks Perplexity. Different story. Someone checks Gemini. Different again. The room gets quiet. They will not normalize. They are different systems with different source logic and different answers about your brand.</p>
+      </div>
 
-        <div class="node-situation">
-          <div class="node-situation-label">The situation</div>
-          <p>The citations are up. Someone does a spot check and notices one of them describes your pricing incorrectly. And then another. The AI is citing you. It is just not getting you right.</p>
-        </div>
+      <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <div class="stat-headline">615x more variation across platforms than within them.</div>
+        <p itemprop="text">Superlines found 615 times more variation in citation rates for the same brand across different AI platforms than within any single platform. Same brand. Different platforms. Completely different story. A ChatGPT score is not an AI visibility score. It's one slice.</p>
+      </div>
 
-        <div class="node-truth">
-          <div class="node-truth-label">The truth</div>
-          <p>Being cited and being represented accurately are two different things. AI systems generate confident-sounding claims that can misrepresent the source, or reference things that do not exist at all. Citation count without accuracy auditing is a metric that can hide active damage.</p>
-        </div>
+      <div class="node-stage30">
+        <div class="node-stage30-label">Stage30</div>
+        <p>The only signal that travels reliably across every platform is structure. That's what we build.</p>
+      </div>
 
-        <div class="node-nucleus" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-          <div class="node-nucleus-label">The data</div>
-          <div class="stat-headline">LLMs generated plausible-sounding citations that did not exist or misrepresented the original source.</div>
-          <p itemprop="text">A peer-reviewed study published in Nature Communications evaluated 7 large language models on 800 medical questions. The models generated citations that were plausible in format but did not exist, or significantly misrepresented the original source material. Confident. Wrong. And presented to users as fact.</p>
-        </div>
+      <div class="node-source">
+        <strong>Source:</strong> "615x variance in citation rates for the same brand across different AI platforms." Superlines, March 2026. AI Search Statistics 2026: 60+ Data Points.<br>
+        <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
+      </div>
+    </article>
 
-        <div class="node-meaning">
-          <div class="node-meaning-label">What it means</div>
-          <p>If you are being cited 200 times a month and 40 of those citations describe your offer incorrectly, your process wrong, or your results in ways you would never approve, that is not a citation win. It is a slow-motion reputation problem you cannot see unless you are auditing for it.</p>
-        </div>
+  </div>
 
-        <div class="node-stage30">
-          <div class="node-stage30-label">Stage30</div>
-          <p>Accuracy is a structural outcome. When your content makes clear, specific, sourced claims, the AI has something accurate to cite. When it does not, the AI fills the gap with whatever it can construct. We close that gap.</p>
-        </div>
+  <section class="canon-outro">
+    <p>This is the short version. Six findings out of two dozen. The rest become the blog series.</p>
+    <p>If your team is staring at AI dashboards that don't match the pipeline, that's the gap Stage30&trade; was built for. <a href="contact.html">Start a conversation.</a></p>
+  </section>
 
-        <div class="node-source">
-          <strong>Full source:</strong> "LLMs generated plausible-sounding citations that did not exist or misrepresented the original source." Venkit et al., April 2025. Nature Communications.<br>
-          <a href="https://www.getpassionfruit.com/research/why-ai-citations-might-not-be-the-best-visibility-metric-to-track-for-ai-search" rel="nofollow" target="_blank">Read the original research at GetPassionFruit</a>
-        </div>
-      </article>
-    </section>
+</main>
+
+<footer role="contentinfo" style="border-top:1px solid rgba(255,255,255,0.08); padding:2rem; text-align:center; font-size:0.8rem; color:rgba(255,255,255,0.45);">
+  <p>&copy; 2026 Stage30, a Cast Iron LA company. &nbsp;&middot;&nbsp; <a href="privacy.html" style="color:rgba(255,255,255,0.6);">Privacy</a> &nbsp;&middot;&nbsp; <a href="terms.html" style="color:rgba(255,255,255,0.6);">Terms</a></p>
+</footer>
+
+</body>
+</html>
