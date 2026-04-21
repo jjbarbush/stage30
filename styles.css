@@ -13,8 +13,8 @@
     --orange: #E8460A;
     --white: #FFFFFF;
     --text-primary: rgba(255, 255, 255, 0.9);
-    --text-secondary: rgba(255, 255, 255, 0.6);
-    --text-nav: rgba(255, 255, 255, 0.5);
+    --text-secondary: rgba(255, 255, 255, 0.85);
+    --text-nav: rgba(255, 255, 255, 0.78);
     --border-subtle: rgba(255, 255, 255, 0.08);
     --border-medium: rgba(255, 255, 255, 0.12);
 }
@@ -46,7 +46,8 @@ header {
 
 .logo {
     font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
+    font-feature-settings: "kern" 1;
     font-size: 1.35rem;
     letter-spacing: 0.08em;
     text-decoration: none;
@@ -61,10 +62,11 @@ header {
 }
 
 .logo-tm {
-    font-size: 0.45em;
+    font-size: 0.5em;
     vertical-align: super;
-    color: var(--text-nav);
-    margin-left: 1px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 2px;
+    font-weight: 600;
 }
 
 nav {
@@ -98,8 +100,8 @@ nav a:hover {
 }
 
 .hero-label {
-    font-size: 0.75rem;
-    font-weight: 400;
+    font-size: 0.85rem;
+    font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--orange);
@@ -108,10 +110,11 @@ nav a:hover {
 
 .hero h1 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 4.5rem;
     line-height: 1.08;
-    letter-spacing: 0.02em;
+    letter-spacing: 0;
+    font-feature-settings: "kern" 1;
     max-width: 900px;
     margin-bottom: 32px;
 }
@@ -142,11 +145,12 @@ nav a:hover {
 
 .section h2 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 2.25rem;
     margin-bottom: 24px;
     line-height: 1.1;
-    letter-spacing: 0.025em;
+    letter-spacing: 0.005em;
+    font-feature-settings: "kern" 1;
 }
 
 .section p {
@@ -222,10 +226,11 @@ nav a:hover {
 
 .signup-inner h2 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 2.25rem;
     margin-bottom: 16px;
-    letter-spacing: 0.025em;
+    letter-spacing: 0.005em;
+    font-feature-settings: "kern" 1;
 }
 
 .signup-inner p {
@@ -270,7 +275,7 @@ nav a:hover {
     color: var(--white);
     border: none;
     font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 1rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -285,8 +290,8 @@ nav a:hover {
 /* Footer */
 footer {
     padding: 32px 60px;
-    border-top: 1px solid var(--border-subtle);
-    font-size: 0.8125rem;
+    border-top: 1px solid var(--border-medium);
+    font-size: 0.9rem;
     color: var(--text-nav);
     background: var(--dark-gray);
 }
@@ -349,6 +354,7 @@ footer {
 
     .hero h1 {
         font-size: 2.75rem;
+        font-weight: 800;
     }
 
     .hero p {
