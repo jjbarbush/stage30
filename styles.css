@@ -459,3 +459,44 @@ input:focus-visible {
     white-space: nowrap;
     border: 0;
 }
+
+/* === Stage30 Refinements: uppercase headings, lighter subheads, lighter numerals === */
+
+/* All-caps headings */
+h1, h2, h3, h4, h5, h6 {
+        text-transform: uppercase;
+}
+
+/* Lighter subhead weights */
+.hero-label,
+.section-label,
+.finding-card .card-num,
+.finding-card .card-link {
+        font-weight: 600;
+}
+
+.finding-card .card-question {
+        font-weight: 500;
+        letter-spacing: 0.02em;
+}
+
+/* Lighter numerals with breathing room */
+.finding-card .card-stat {
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        font-variant-numeric: tabular-nums;
+}
+
+/* Tabular numerals globally so digits never collide */
+.logo,
+.card-stat,
+.stat-number,
+.stat-callout {
+        font-variant-numeric: tabular-nums;
+}
+
+/* Slim contact-page subheads (Team member names) */
+.content-block h3 {
+        font-weight: 400;
+        letter-spacing: 0.12em;
+}
